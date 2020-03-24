@@ -6,11 +6,12 @@ import java.util.Set;
 
 
 @Entity
+@SequenceGenerator(name="seq2", initialValue=10, allocationSize=10000000)
 @Table( name = "client")
 public class clientEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq2"  )
     @Column(name = "client_id")
     private int id;
 

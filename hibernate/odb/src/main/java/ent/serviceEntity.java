@@ -5,11 +5,12 @@ import java.lang.String;
 import java.util.Set;
 
 @Entity
+@SequenceGenerator(name="seq8", initialValue=10, allocationSize=10000000)
 @Table( name = "service")
 public class serviceEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq8"  )
     @Column(name = "service_id")
     private int id;
 

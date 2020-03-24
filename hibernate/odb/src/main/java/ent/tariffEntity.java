@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
+@SequenceGenerator(name="seq9", initialValue=10, allocationSize=10000000)
 @Table(
         name = "tariff",
         uniqueConstraints = {
@@ -16,7 +17,7 @@ import java.util.Date;
 public class tariffEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq9"  )
     @Column(name = "tariff_id")
     private int id;
 

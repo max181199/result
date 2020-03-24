@@ -5,11 +5,12 @@ import java.lang.String;
 import ent.contactEntity;
 
 @Entity
+@SequenceGenerator(name="seq4", initialValue=10, allocationSize=10000000)
 @Table( name = "email" )
 public class emailEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq4"  )
     @Column(name = "email_id")
     private int id;
 

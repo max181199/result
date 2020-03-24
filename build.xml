@@ -1,5 +1,5 @@
 <project name="web" basedir="." default="usage">
-	
+
 	<property name="name" value="web"/>
 	<property file="build.properties"/>
 	<property name="db.dir" value="database"/>
@@ -11,8 +11,9 @@
 		<echo message=""/>
 		<echo message="Available targets are:"/>
 		<echo message=""/>
-		<echo message="setupDB   --> Initialize the database"/>
+		<echo message="setupDB  -->  Initialize the database"/>
 		<echo message="testDB   -->  Test       the database"/>
+		<echo message="deleteDB -->  Empty      the database"/>
 		<echo message=""/>
 	</target>
 
@@ -37,4 +38,8 @@
 
 	</target>
 
-</project>	
+	<target name="deleteDB" depends="setupPSQL" description="empty database">
+		<ant antfile="${db.dir}/build.xml" target="delete" />
+	</target>
+
+</project>

@@ -9,15 +9,15 @@
 		<echo message="selectTables --> Print Tables "/>
 	</target>
 
-	<path id="psqlDB"> 
-	    <fileset dir="lib"> 
-	        <include name="post*.jar"/> 
-	    </fileset> 
-	</path> 
+	<path id="psqlDB">
+	    <fileset dir="lib">
+	        <include name="post*.jar"/>
+	    </fileset>
+	</path>
 
 	<target name="createTables">
 		<echo message="Create tables using: ${db.driver} ${db.url}" />
-		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}"
 			print="true" onerror="continue">
 			<classpath>
 				<fileset dir="lib">
@@ -31,7 +31,7 @@
 
 	<target name="dropTables">
 		<echo message="Drop tables using: ${db.driver} ${db.url}" />
-		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}"
 			print="true" onerror="continue">
 			<classpath>
 				<fileset dir="lib">
@@ -44,7 +44,7 @@
 
 	<target name="initTables">
 		<echo message="Fill tables using: ${db.driver} ${db.url}" />
-		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}"
 			print="true" onerror="continue">
 			<classpath>
 				<fileset dir="lib">
@@ -57,7 +57,7 @@
 
 	<target name="selectTables">
 		<echo message="Print tables using: ${db.driver} ${db.url}" />
-		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}"
 			print="true" onerror="continue">
 			<classpath>
 				<fileset dir="lib">
@@ -68,8 +68,63 @@
 		</sql>
 	</target>
 
+	<target name="createTmpRole">
+		<exec executable="createuser">
+			<arg value="-s"/>
+			<arg value="-l"/>
+			<arg value="tmp"/>
+		</exec>
+	</target>
+
+
+	<target name="createBase">
+		<exec executable="createdb">
+			<arg value="web"/>
+		</exec>
+	</target>
+
+	<target name="dropBase">
+		<exec executable="dropdb">
+			<arg value="web"/>
+		</exec>
+	</target>
+
+	<target name="dropTmpRole">
+		<exec executable="dropuser">
+			<arg value="tmp"/>
+		</exec>
+	</target>
+
+	<target name="createRealRole">
+		<echo message="Create Real Role: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="tmp" password="tmp"
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			CREATE ROLE pc WITH LOGIN SUPERUSER PASSWORD 'pc';
+		</sql>
+	</target>
+
+	<target name="dropRealRole">
+		<echo message="DROP Real Role: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="tmp" password="tmp"
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			DROP ROLE pc;
+		</sql>
+	</target>
+
+
 
 <target name="all" depends="usage,createTables,initTables,selectTables,dropTables" />
-	<target name="setup" depends="createTables,initTables" />
+	<target name="setup" depends="createTmpRole,createBase,createRealRole,createTables,initTables" />
+		<target name="delete" depends="dropTables,dropRealRole,dropBase,dropTmpRole" />
 
 </project>

@@ -10,12 +10,13 @@ import ent.addresEntity;
 import ent.emailEntity;
 
 @Entity
+@SequenceGenerator(name="seq3", initialValue=10, allocationSize=10000000)
 @Table( name = "contact")
 public class contactEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "contact_id ")
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq3"  )
+    @Column(name = "contact_id")
     private int id;
 
     @Column( name = "name" , nullable = false, unique = true, length = 255)

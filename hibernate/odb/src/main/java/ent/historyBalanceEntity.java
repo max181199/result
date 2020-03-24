@@ -9,11 +9,12 @@ import ent.clientEntity;
 import ent.serviceEntity;
 
 @Entity
+@SequenceGenerator(name="seq5", initialValue=20, allocationSize=10000000)
 @Table( name = "balance_history")
 public class historyBalanceEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq5"  )
     @Column(name = "history_id")
     private int id;
 
