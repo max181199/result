@@ -1,0 +1,40 @@
+<project name="web" basedir="." default="usage">
+	
+	<property name="name" value="web"/>
+	<property file="build.properties"/>
+	<property name="db.dir" value="database"/>
+
+	<target name="usage">
+		<echo message=""/>
+		<echo message="WEB build file"/>
+		<echo message="------------------------------------------------------"/>
+		<echo message=""/>
+		<echo message="Available targets are:"/>
+		<echo message=""/>
+		<echo message="setupDB   --> Initialize the database"/>
+		<echo message="testDB   -->  Test       the database"/>
+		<echo message=""/>
+	</target>
+
+	<target name="setupPSQL" description="Set up PSQL database properties">
+
+		<property name="db.driver" value="${psql.driver}"/>
+		<property name="db.url" value="${psql.url}"/>
+		<property name="db.user" value="${psql.user}"/>
+		<property name="db.pw" value="${psql.pw}"/>
+
+	</target>
+
+	<target name="testDB" depends="setupPSQL" description="Initialize database">
+
+		<ant antfile="${db.dir}/build.xml"/>
+
+	</target>
+
+	<target name="setupDB" depends="setupPSQL" description="Initialize database">
+
+		<ant antfile="${db.dir}/build.xml" target="setup" />
+
+	</target>
+
+</project>	

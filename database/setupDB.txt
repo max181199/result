@@ -1,0 +1,100 @@
+CREATE TABLE IF NOT EXISTS client(
+
+	client_id 		 SERIAL	      PRIMARY KEY,
+	name      		 varchar(255) NOT NULL UNIQUE,
+	max_credit		 numeric	  NOT NULL DEFAULT(300),	
+	max_credit_day   numeric      NOT NULL DEFAULT(30)   
+	
+);
+
+
+CREATE TABLE IF NOT EXISTS account(
+
+	client_id 		 integer	  REFERENCES client(client_id) UNIQUE NOT NULL,
+	balance		     numeric	  NOT NULL DEFAULT(0),	
+	credit_day       numeric      NOT NULL DEFAULT(0)     
+	
+);
+
+CREATE TABLE IF NOT EXISTS contact(
+
+	contact_id 		 SERIAL	      PRIMARY KEY,
+	client_id		 int NOT NULL REFERENCES client(client_id), 
+	name      		 varchar(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS addres(
+
+	addres_id SERIAL PRIMARY KEY,
+	contact_id   int NOT NULL  REFERENCES contact(contact_id),
+	addres varchar(255) NOT NULL,
+	UNIQUE(contact_id,addres)
+
+);
+
+CREATE TABLE IF NOT EXISTS phone(
+
+	phone_id SERIAL PRIMARY KEY,
+	contact_id int  NOT NULL REFERENCES contact(contact_id) ,
+	phone varchar(255) NOT NULL,
+	UNIQUE(contact_id,phone)
+
+);
+
+CREATE TABLE IF NOT EXISTS email(
+
+	email_id SERIAL PRIMARY KEY,
+	contact_id int  NOT NULL REFERENCES contact(contact_id),
+	email varchar(255) NOT NULL,
+	UNIQUE(contact_id,email)
+
+);
+
+
+
+CREATE TABLE IF NOT EXISTS  tariff(
+
+	tariff_id   SERIAL NOT NULL ,
+	service_id int NOT NULL,
+	cost        numeric NOT NULL DEFAULT(0),
+	state       boolean NOT NULL DEFAULT(true),
+	daypaymode  boolean NOT NULL DEFAULT(true),
+	value     numeric NOT NULL DEFAULT(0),     
+	create_time timestamp NOT NULL DEFAULT(current_timestamp),
+	PRIMARY KEY (tariff_id,create_time)
+
+);
+
+CREATE TABLE IF NOT EXISTS service(
+
+	service_id  SERIAL PRIMARY KEY,
+	type   	    varchar(32) NOT NULL DEFAULT('BASE'),
+	describe    text    NOT NULL DEFAULT('NO DESCRIBE'),
+	name        varchar(255)    NOT NULL DEFAULT('NO NAME'),
+	state       boolean NOT NULL DEFAULT(true)
+
+);
+
+CREATE TABLE IF NOT EXISTS service_history(
+
+	history_id  SERIAL  PRIMARY KEY,
+	service_id  integer REFERENCES service(service_id) NOT NULL,
+	client_id   integer REFERENCES client(client_id) NOT NULL,
+	state       numeric NOT NULL DEFAULT(0),
+	begin_time  timestamp NOT NULL DEFAULT(current_timestamp),
+	end_time    timestamp ,
+	UNIQUE(service_id,client_id,begin_time,end_time),
+	CHECK(begin_time < end_time)
+
+);
+
+CREATE TABLE IF NOT EXISTS balance_history(
+
+	history_id SERIAL PRIMARY KEY,
+	client_id  integer NOT NULL REFERENCES client(client_id),
+	service_id  integer REFERENCES service(service_id) NOT NULL,
+	summ        numeric NOT NULL,	
+	operation_time timestamp NOT NULL DEFAULT(current_timestamp),
+	UNIQUE(client_id,service_id,operation_time)
+
+);

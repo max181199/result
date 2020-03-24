@@ -1,0 +1,10 @@
+SELECT * FROM client ;
+SELECT * FROM account ;
+SELECT * FROM contact ;
+SELECT * FROM phone;
+SELECT * FROM email;
+SELECT * FROM addres;
+SELECT * FROM tariff ;
+SELECT * FROM service ;
+SELECT * FROM service_history ;
+SELECT * FROM balance_history ;

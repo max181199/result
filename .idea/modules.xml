@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Page/Main/Main.iml" filepath="$PROJECT_DIR$/Page/Main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate/odb/odb.iml" filepath="$PROJECT_DIR$/hibernate/odb/odb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web.iml" filepath="$PROJECT_DIR$/web.iml" />
+    </modules>
+  </component>
+</project>

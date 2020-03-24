@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Main:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="73" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="web: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="web: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="web: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="web: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="web" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lib/hibernate-types" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/hibernate/odb/src/main/java/ent/tariffEntity.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YRgoBwjajLL6i3hyB70FLIW8pu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="web_test" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ODB/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34712642" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ODB/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.test_day.dao_day_test">
+    <configuration default="true" type="AntRunConfiguration">
+      <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="usage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="odb" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Main_war_exploded" />
+      <deployment>
+        <artifact name="Main:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Main:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="test_IDU_ALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_IDU_ALL" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_IDU_ALL.IDU_FOR_ALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_IDU_ALL" />
+      <option name="METHOD_NAME" value="IDU_FOR_ALL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_day.dao_day_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_day" />
+      <option name="METHOD_NAME" value="dao_day_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_generatorConnectPage.genTestCOP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_generatorConnectPage" />
+      <option name="METHOD_NAME" value="genTestCOP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="testODB" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="testODB" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
+      <item itemvalue="JUnit.test_generatorConnectPage.genTestCOP" />
+      <item itemvalue="JUnit.test_IDU_ALL" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.test_IDU_ALL.IDU_FOR_ALL" />
+      <item itemvalue="JUnit.test_day.dao_day_test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test_day.dao_day_test" />
+        <item itemvalue="JUnit.test_IDU_ALL.IDU_FOR_ALL" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.test_IDU_ALL" />
+        <item itemvalue="JUnit.test_generatorConnectPage.genTestCOP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="" />
+      <created>1582910992578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582910992578</updated>
+      <workItem from="1582910995978" duration="823000" />
+      <workItem from="1582918793056" duration="10824000" />
+      <workItem from="1582974227929" duration="15321000" />
+      <workItem from="1583059132882" duration="89000" />
+      <workItem from="1583059242035" duration="4162000" />
+      <workItem from="1583143713619" duration="3496000" />
+      <workItem from="1583214287765" duration="4547000" />
+      <workItem from="1583220783395" duration="265000" />
+      <workItem from="1583226392651" duration="2502000" />
+      <workItem from="1583240413205" duration="525000" />
+      <workItem from="1583254222686" duration="6251000" />
+      <workItem from="1583269227818" duration="5580000" />
+      <workItem from="1583306056646" duration="9118000" />
+      <workItem from="1583325122811" duration="3900000" />
+      <workItem from="1583398098979" duration="25000" />
+      <workItem from="1583398817088" duration="2124000" />
+      <workItem from="1583418062799" duration="1555000" />
+      <workItem from="1583494102113" duration="38710000" />
+      <workItem from="1583669767362" duration="17033000" />
+      <workItem from="1583819472877" duration="234000" />
+      <workItem from="1583819863175" duration="3197000" />
+      <workItem from="1583825222753" duration="669000" />
+      <workItem from="1583937434635" duration="2853000" />
+      <workItem from="1584558783665" duration="194000" />
+      <workItem from="1584711942628" duration="2331000" />
+      <workItem from="1584999018912" duration="5410000" />
+      <workItem from="1585038094602" duration="4135000" />
+      <workItem from="1585043285456" duration="3292000" />
+      <workItem from="1585048212690" duration="10660000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/externalLib/hibernate-types" />
+      <path value="$PROJECT_DIR$/lib/hibernate-types" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#Assign_Data_Sources" timestamp="1583270821536">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Assign_Data_Sources/0.23.1440.877@0.23.1440.877" timestamp="1583270821536" />
+    <state x="320" y="127" key="#Inspections" timestamp="1582976083765">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1582976083765" />
+    <state x="320" y="127" width="800" height="717" key="#Intentions" timestamp="1583254477342">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" width="800" height="717" key="#Intentions/0.23.1440.877@0.23.1440.877" timestamp="1583254477342" />
+    <state x="320" y="127" key="#Notifications" timestamp="1583254229154">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1583254229154" />
+    <state x="320" y="127" key="#Project_Structure" timestamp="1582974289929">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1582974289929" />
+    <state x="458" y="234" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583017597585">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="234" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1583017597585" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583325182717">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1583325182717" />
+    <state x="479" y="347" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1583824325513">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="479" y="347" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.23.1440.877@0.23.1440.877" timestamp="1583824325513" />
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1583592658897">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1583592658897" />
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583144939940">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1583144939940" />
+    <state x="334" y="157" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582986538312">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="334" y="157" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.877@0.23.1440.877" timestamp="1582986538312" />
+    <state x="511" y="375" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582986560495">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="511" y="375" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.23.1440.877@0.23.1440.877" timestamp="1582986560495" />
+    <state x="331" y="134" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1583399164616">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="331" y="134" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1583399164616" />
+    <state x="542" y="361" key="#com.intellij.ws.actions.GenerateJavaFromWsdlDialog" timestamp="1582911006035">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="542" y="361" key="#com.intellij.ws.actions.GenerateJavaFromWsdlDialog/0.23.1440.877@0.23.1440.877" timestamp="1582911006035" />
+    <state x="286" y="135" key="#test_findByID" timestamp="1583939820239">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585067837818">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585067837818" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585067837818">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585067837818" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585067837817">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585067837817" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585067837818">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585067837818" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1583940338891">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583940338891" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1583940338890">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1583940338890" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1583940338890">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1583940338890" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1583940338891">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1583940338891" />
+    <state x="332" y="162" key="NewModule_or_Project.wizard" timestamp="1583145229494">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="332" y="162" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1583145229494" />
+    <state x="133" y="36" key="SettingsEditor" timestamp="1583825293224">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="133" y="36" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583825293224" />
+    <state x="600" y="363" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583227069507">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="600" y="363" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.877@0.23.1440.877" timestamp="1583227069507" />
+    <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1583311920423">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1440.877@0.23.1440.877" timestamp="1583311920423" />
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1585048214126">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585048214126" />
+    <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583312549771">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.877@0.23.1440.877" timestamp="1583312549771" />
+    <state x="499" y="195" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583254489651">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="499" y="195" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1583254489651" />
+    <state x="613" y="203" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1582911187409">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="613" y="203" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.23.1440.877@0.23.1440.877" timestamp="1582911187409" />
+    <state x="378" y="218" width="683" height="486" key="find.popup" timestamp="1583821589676">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="378" y="218" width="683" height="486" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1583821589676" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1583399913292">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1440.877@0.23.1440.877" timestamp="1583399913292" />
+    <state x="97" y="70" key="new project wizard" timestamp="1583145201549">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="97" y="70" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1583145201549" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1583673278385">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583673278385" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web$Main.ic" NAME="Main Coverage Results" MODIFIED="1583938646220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/web$test.ic" NAME="test_findByID Coverage Results" MODIFIED="1583940313543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>mx.*</FILTER>
+    </SUITE>
+  </component>
+</project>

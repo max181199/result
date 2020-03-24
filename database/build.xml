@@ -1,0 +1,75 @@
+
+<project name="setupDB" basedir="." default="all">
+
+	<target name="usage">
+		<echo message=""/>
+		<echo message="createTables --> Create tables "/>
+		<echo message="dropTables --> Drop Tables "/>
+		<echo message="initTables --> Fill Tables "/>
+		<echo message="selectTables --> Print Tables "/>
+	</target>
+
+	<path id="psqlDB"> 
+	    <fileset dir="lib"> 
+	        <include name="post*.jar"/> 
+	    </fileset> 
+	</path> 
+
+	<target name="createTables">
+		<echo message="Create tables using: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			<transaction src="${db.dir}/setupDB.txt" />
+		</sql>
+
+	</target>
+
+	<target name="dropTables">
+		<echo message="Drop tables using: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			<transaction src="${db.dir}/dropDB.txt" />
+		</sql>
+	</target>
+
+	<target name="initTables">
+		<echo message="Fill tables using: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			<transaction src="${db.dir}/initDB.txt" />
+		</sql>
+	</target>
+
+	<target name="selectTables">
+		<echo message="Print tables using: ${db.driver} ${db.url}" />
+		<sql driver="${db.driver}" url="${db.url}" userid="${db.user}" password="${db.pw}" 
+			print="true" onerror="continue">
+			<classpath>
+				<fileset dir="lib">
+					<include name="post*.jar" />
+				</fileset>
+			</classpath>
+			<transaction src="${db.dir}/selectDB.txt" />
+		</sql>
+	</target>
+
+
+<target name="all" depends="usage,createTables,initTables,selectTables,dropTables" />
+	<target name="setup" depends="createTables,initTables" />
+
+</project>
