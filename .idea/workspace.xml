@@ -2,27 +2,27 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Main:war exploded" />
+      <artifact name="odb:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/odb_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Main_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/addresEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/addresEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/clientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/clientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/contactEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/contactEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/emailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/emailEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/historyBalanceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/historyBalanceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/historyServiceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/historyServiceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/phoneEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/phoneEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/serviceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/serviceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/tariffEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/ent/tariffEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/dropDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/dropDB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_findByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_findByID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,20 +119,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1YRgoBwjajLL6i3hyB70FLIW8pu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="web_test" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="gen_web_test" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -141,9 +145,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ODB/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.34712642" />
+    <property name="project.structure.side.proportion" value="0.2857143" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -151,14 +155,15 @@
       <recent name="$PROJECT_DIR$/ODB/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.test_day.dao_day_test">
     <configuration default="true" type="AntRunConfiguration">
       <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="usage" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
+      <output_file path="$PROJECT_DIR$/somefile.txt" is_save="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="odb" />
       <method v="2">
@@ -216,9 +221,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Main:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration name="test_IDU_ALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -236,7 +239,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_IDU_ALL.IDU_FOR_ALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_day" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
@@ -245,14 +248,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_IDU_ALL" />
-      <option name="METHOD_NAME" value="IDU_FOR_ALL" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_day" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_day.dao_day_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_day" />
+      <option name="METHOD_NAME" value="dao_day_test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_findByID.dao_findByID_HistoryService_ent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_findByID.dao_findByID_HistoryBalance_ent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
@@ -262,13 +280,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="mx" />
       <option name="MAIN_CLASS_NAME" value="mx.test_findByID" />
-      <option name="METHOD_NAME" value="dao_findByID_HistoryService_ent" />
+      <option name="METHOD_NAME" value="dao_findByID_HistoryBalance_ent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_generatorTariffPage.genTestTP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_findByID.dao_findByID_service_ent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
@@ -277,8 +295,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_generatorTariffPage" />
-      <option name="METHOD_NAME" value="genTestTP" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_findByID" />
+      <option name="METHOD_NAME" value="dao_findByID_service_ent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,16 +353,17 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
       <item itemvalue="JUnit.test_IDU_ALL" />
-      <item itemvalue="JUnit.test_IDU_ALL.IDU_FOR_ALL" />
-      <item itemvalue="JUnit.test_generatorTariffPage.genTestTP" />
-      <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryService_ent" />
+      <item itemvalue="JUnit.test_day" />
+      <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryBalance_ent" />
+      <item itemvalue="JUnit.test_day.dao_day_test" />
+      <item itemvalue="JUnit.test_findByID.dao_findByID_service_ent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryService_ent" />
-        <item itemvalue="JUnit.test_generatorTariffPage.genTestTP" />
-        <item itemvalue="JUnit.test_IDU_ALL.IDU_FOR_ALL" />
+        <item itemvalue="JUnit.test_day.dao_day_test" />
+        <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryBalance_ent" />
+        <item itemvalue="JUnit.test_findByID.dao_findByID_service_ent" />
+        <item itemvalue="JUnit.test_day" />
         <item itemvalue="JUnit.test_IDU_ALL" />
       </list>
     </recent_temporary>
@@ -403,6 +422,7 @@
       <workItem from="1585072731077" duration="392000" />
       <workItem from="1585073190227" duration="659000" />
       <workItem from="1585074206070" duration="129000" />
+      <workItem from="1585075103971" duration="16066000" />
     </task>
     <servers />
   </component>
@@ -420,6 +440,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#Assign_Data_Sources/0.23.1440.877@0.23.1440.877" timestamp="1583270821536" />
+    <state x="507" y="273" key="#BuildArtifactsBeforeRunChooser" timestamp="1585141496543">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="507" y="273" key="#BuildArtifactsBeforeRunChooser/0.23.1440.877@0.23.1440.877" timestamp="1585141496543" />
     <state x="320" y="127" key="#Inspections" timestamp="1582976083765">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -432,18 +456,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1583254229154" />
-    <state x="320" y="127" key="#Project_Structure" timestamp="1582974289929">
+    <state x="251" y="68" width="964" height="765" key="#Project_Structure" timestamp="1585148239647">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1582974289929" />
+    <state x="251" y="68" width="964" height="765" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1585148239647" />
     <state x="458" y="234" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583017597585">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="234" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1583017597585" />
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583325182717">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585142106408">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1583325182717" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1585142106408" />
     <state x="479" y="347" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1583824325513">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -452,10 +476,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1583592658897" />
-    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583144939940">
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585148017352">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1583144939940" />
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1585148017352" />
     <state x="334" y="157" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582986538312">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -472,26 +496,30 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="542" y="361" key="#com.intellij.ws.actions.GenerateJavaFromWsdlDialog/0.23.1440.877@0.23.1440.877" timestamp="1582911006035" />
+    <state x="286" y="123" key="#test_day" timestamp="1585075358099">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="286" y="123" key="#test_day/0.23.1440.877@0.23.1440.877" timestamp="1585075358099" />
     <state x="286" y="135" key="#test_findByID" timestamp="1583939820239">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585074334486">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585155141276">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585074334486" />
-    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585074334485">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585155141276" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585155141275">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585074334485" />
-    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585074334485">
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585155141275" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585155141274">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585074334485" />
-    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585074334486">
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585155141274" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585155141275">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585074334486" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585155141275" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1583940338891">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -516,10 +544,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="332" y="162" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1583145229494" />
-    <state x="133" y="36" key="SettingsEditor" timestamp="1583825293224">
+    <state x="527" y="179" key="RollbackChangesDialog" timestamp="1585146172305">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="133" y="36" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583825293224" />
+    <state x="527" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1585146172305" />
+    <state x="262" y="55" key="SettingsEditor" timestamp="1585151638883">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="262" y="55" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1585151638883" />
     <state x="600" y="363" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583227069507">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -528,10 +560,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1440.877@0.23.1440.877" timestamp="1583311920423" />
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1585074206163">
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1585075104453">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585074206163" />
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585075104453" />
     <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583312549771">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -556,6 +588,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="97" y="70" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1583145201549" />
+    <state x="385" y="211" width="670" height="675" key="run.anything.popup" timestamp="1585138782397">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="211" width="670" height="675" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1585138782397" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1583673278385">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

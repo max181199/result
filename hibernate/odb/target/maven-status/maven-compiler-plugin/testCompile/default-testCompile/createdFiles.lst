@@ -1,0 +1,10 @@
+mx/test_generatorConnectPage.class
+mx/test_generatorTariffPage.class
+mx/test_generatorServicePage.class
+mx/test_generatorOneServicePage.class
+mx/test_generatorOneClientPage.class
+mx/test_IDU_ALL.class
+mx/test_generatorClientPages.class
+mx/test_day.class
+mx/test_findByID.class
+mx/test_generatorContactPage.class

@@ -242,17 +242,17 @@ public class Main {
         System.out.println("/////////     END TARIFF DC TEST      /////////");
         System.out.println("<--------------------------------------------->");
 
-        getConnectPage.setClinetBacklID(1);
-        trump7 = getConnectPage.getPageConnect();
-        for ( connectPage cop : trump7){
-            cop.setAddClientId(1);
-            cop.setAddServiceId(1);
-            cop.setNewValue(123);
-            cop.setNewValueSet(true);
-            cop=cop.AddNewService();
-
-            System.out.println(cop);
-        }
+//        getConnectPage.setClinetBacklID(1);
+//        trump7 = getConnectPage.getPageConnect();
+//        for ( connectPage cop : trump7){
+//            cop.setAddClientId(1);
+//            cop.setAddServiceId(1);
+//            cop.setNewValue(123);
+//            cop.setNewValueSet(true);
+//            cop=cop.AddNewService();
+//
+//            System.out.println(cop);
+//        }
 
         System.out.println("<--------------------------------------------->");
         System.out.println("/////////     END CONNECT DC TEST     /////////");

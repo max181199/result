@@ -14,6 +14,7 @@
 		<echo message="setupDB  -->  Initialize the database"/>
 		<echo message="testDB   -->  Test       the database"/>
 		<echo message="deleteDB -->  Empty      the database"/>
+		<echo message="testHB --> Test ODB"/>
 		<echo message=""/>
 	</target>
 
@@ -41,5 +42,16 @@
 	<target name="deleteDB" depends="setupPSQL" description="empty database">
 		<ant antfile="${db.dir}/build.xml" target="delete" />
 	</target>
+
+	<target name="testHibernate" description="test odb">
+		<ant antfile="gen_web_test.xml" target="odb.junit" />
+	</target>
+
+	<target name="compile" description="compile module  odb">
+		<ant antfile="gen_web_test.xml" target="all" />
+	</target>
+
+	<target name="testHB" depends="deleteDB,setupDB,compile,testHibernate"></target>
+
 
 </project>
