@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_web_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gen_web_test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_IDU_ALL.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_IDU_ALL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_findByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_findByID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorClientPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorClientPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorConnectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorConnectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneClientPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorTariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" afterDir="false" />
-    </list>
+    <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -430,7 +406,7 @@
       <workItem from="1585073190227" duration="659000" />
       <workItem from="1585074206070" duration="129000" />
       <workItem from="1585075103971" duration="16066000" />
-      <workItem from="1585155611758" duration="2557000" />
+      <workItem from="1585155611758" duration="2679000" />
     </task>
     <servers />
   </component>
@@ -512,22 +488,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585156755462">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585158398106">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585156755462" />
-    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585156755461">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585158398106">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585156755461" />
-    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585156755461">
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585158398105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585156755461" />
-    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585156755462">
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585158398105" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585158398106">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585156755462" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1583940338891">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
