@@ -1,7 +1,8 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+//import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -44,13 +45,13 @@ public class test_IDU_ALL {
         List<oneClientPage> tmp = genOneClientPage.getPageOneClient();
         for ( oneClientPage ocp : tmp){
             if (!ocp.getName().equals("MAX181199")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
             if (ocp.getMax_credit() !=100){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
             if (ocp.getMax_credit_day() != 333){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 
@@ -61,16 +62,16 @@ public class test_IDU_ALL {
         tmp = genOneClientPage.getPageOneClient();
         for ( oneClientPage ocp : tmp){
             if (!ocp.getName().equals("NOMAX181199")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
             if (ocp.getMax_credit() !=100){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
             if (ocp.getMax_credit_day() != 333){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
             if (dao.findAccountById(ocp.getSecretClientId()).getId() != ocp.getSecretClientId()){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 
@@ -84,7 +85,7 @@ public class test_IDU_ALL {
         tmp = genOneClientPage.getPageOneClient();
         for ( oneClientPage ocp : tmp){
             if (ocp.getName().equals("NOMAX181199")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 
@@ -120,7 +121,7 @@ public class test_IDU_ALL {
               }
 
               if (keyOne || keyTwo || keyThree){
-                  Assert.assertEquals(0,1);
+                  Assert.fail();
               }
 
               cnp = cnp.DeletePhone("8-888-888-8888");
@@ -144,7 +145,7 @@ public class test_IDU_ALL {
             }
 
             if (keyOne || keyTwo || keyThree){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
 
         }
@@ -172,7 +173,7 @@ public class test_IDU_ALL {
         }
 
         if (keyOne) {
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
         cop.setContactName("DEVIL");
@@ -191,7 +192,7 @@ public class test_IDU_ALL {
         }
 
         if (keyOne || keyTwo) {
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
 
@@ -210,7 +211,7 @@ public class test_IDU_ALL {
         }
 
         if (keyOne) {
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
 
@@ -237,7 +238,7 @@ public class test_IDU_ALL {
         }
 
         if ( keyOne) {
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
         keyOne = false;
@@ -261,7 +262,7 @@ public class test_IDU_ALL {
         }
 
         if ( keyOne) {
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
 
@@ -286,7 +287,7 @@ public class test_IDU_ALL {
             }
         }
         if (keyOne){
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
         osp.setName("LIGHT_LORD");
@@ -304,7 +305,7 @@ public class test_IDU_ALL {
             }
         }
         if (keyOne || keyTwo){
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
         osp.DELETE();
@@ -319,7 +320,7 @@ public class test_IDU_ALL {
 
         }
         if (keyOne){
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
 
 
@@ -349,7 +350,7 @@ public class test_IDU_ALL {
             }
 
             if (keyOne){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
 
             cpp=cpp.RemoteService(tmpID);
@@ -363,7 +364,7 @@ public class test_IDU_ALL {
             }
 
             if (keyOne){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 

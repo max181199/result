@@ -1,7 +1,8 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+//import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -29,7 +30,7 @@ public class test_generatorConnectPage {
         for ( connectPage cop : trump7){
             for (serviceEntity see : cop.getAddServiceList()){
                 if ((see.getId() == 1) || (see.getId() == 2)){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }

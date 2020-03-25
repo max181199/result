@@ -1,7 +1,8 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+//import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -28,7 +29,7 @@ public class test_generatorOneServicePage {
         tmp5 = genOneServicePage.getPageOneService();
         for ( oneServicePage osp : tmp5){
             if (!osp.getName().equals("BalanceDOWN")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genOneServicePage.setServiceName("");
@@ -39,7 +40,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if(taf.getId() != 7){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -51,7 +52,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if(taf.getState() == false){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -64,7 +65,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if((int)taf.getCost() != 2){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -77,7 +78,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if( taf.getDaypaymode() == false){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -90,7 +91,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if( taf.getValue() != 777){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -103,7 +104,7 @@ public class test_generatorOneServicePage {
         for ( oneServicePage osp : tmp5){
             for (tariffEntity taf : osp.getTariff()){
                 if(taf.getId() != 3){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }

@@ -1,7 +1,8 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+import org.junit.Assert;
+//import org.testng.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -26,7 +27,8 @@ public class test_generatorClientPages {
         genClientPage.setClientName("Milton Bostock");
         List<clientPage>  tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
-            Assert.assertEquals(ent.getClientName(),"Milton Bostock");
+            Assert.assertEquals("Milton Bostock",ent.getClientName());
+            //Assert.assertEquals(ent.getClientName(),"Milton Bostock");
         }
         genClientPage.setClientName("");
 
@@ -34,7 +36,7 @@ public class test_generatorClientPages {
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
             if (ent.getClientBalance() < 0 ){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genClientPage.setBalance(0);
@@ -43,7 +45,7 @@ public class test_generatorClientPages {
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
             if (ent.getClientDebt() <= 0 ){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genClientPage.setDebt(false);
@@ -52,7 +54,7 @@ public class test_generatorClientPages {
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
             if (ent.getClientName() == "Zayden Gould"){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genClientPage.setServiceName("");
@@ -69,7 +71,7 @@ public class test_generatorClientPages {
         genClientPage.setServiceTopDate(parsingDate);
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
-            Assert.assertEquals(0,1);
+            Assert.fail();
         }
         genClientPage.setServiceTopDate(null);
 
@@ -87,7 +89,7 @@ public class test_generatorClientPages {
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
             if (ent.getClientName() == "Milton Bostock"){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 

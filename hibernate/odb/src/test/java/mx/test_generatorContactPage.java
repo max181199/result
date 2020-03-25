@@ -1,7 +1,7 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -25,7 +25,7 @@ public class test_generatorContactPage {
         List<contactPage> trump3 = genContactPage.getPageContact();
         for ( contactPage cnp : trump3){
             if (!cnp.getContactName().equals("Milton Bostock")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
     }

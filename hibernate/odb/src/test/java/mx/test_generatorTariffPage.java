@@ -1,7 +1,7 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -27,7 +27,7 @@ public class test_generatorTariffPage {
         List<tariffPage> tmp6 = getTariffPage.getPageTariff();
         for ( tariffPage tap : tmp6){
             if ( tap.getTariffId() != 7){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
     }

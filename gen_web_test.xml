@@ -767,13 +767,13 @@
       <path refid="application"/>
     </classpath>
     <test name="mx.test_findByID"></test>
-    <test name="mx.test_generatorTariffPage"></test>
-    <test name="mx.test_generatorServicePage"></test>
-    <test name="mx.test_generatorOneServicePage"></test>
-    <test name="mx.test_generatorOneClientPage"></test>
-    <test name="mx.test_generatorContactPage"></test>
-    <test name="mx.test_generatorConnectPage"></test>
     <test name="mx.test_generatorClientPages"></test>
+    <test name="mx.test_generatorConnectPage"></test>
+    <test name="mx.test_generatorContactPage"></test>
+    <test name="mx.test_generatorOneClientPage"></test>
+    <test name="mx.test_generatorOneServicePage"></test>
+    <test name="mx.test_generatorServicePage"></test>
+    <test name="mx.test_generatorTariffPage"></test>
     <test name="mx.test_IDU_ALL"></test>
     <test name="mx.test_day"></test>
   </junit>

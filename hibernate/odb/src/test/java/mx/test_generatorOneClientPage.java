@@ -1,7 +1,8 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+import org.junit.Assert;
+//import org.testng.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -26,7 +27,7 @@ public class test_generatorOneClientPage {
         List<oneClientPage> tmp2 = genOneClientPage.getPageOneClient();
         for ( oneClientPage ent : tmp2){
             if (!ent.getName().equals("Milton Bostock")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
 
@@ -36,7 +37,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyBalanceEntity hes : ent.getBalanceHistory()){
                 if (!hes.getService().getName().equals("BalanceUP") ){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -49,7 +50,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyBalanceEntity hes : ent.getBalanceHistory()){
                 if (hes.getSumm() != 400 ){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -63,7 +64,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyBalanceEntity hes : ent.getBalanceHistory()){
                 if (hes.getId() != 1 ){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -74,7 +75,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyServiceEntity hse : ent.getServiceHistory()){
                 if ( !hse.getService().getName().equals("push_service")){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -87,7 +88,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyServiceEntity hse : ent.getServiceHistory()){
                 if ( (int)hse.getState() != 50){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }
@@ -103,7 +104,7 @@ public class test_generatorOneClientPage {
         for ( oneClientPage ent : tmp2){
             for (historyServiceEntity hse : ent.getServiceHistory()){
                 if ( (int)hse.getId() != 1){
-                    Assert.assertEquals(0,1);
+                    Assert.fail();
                 }
             }
         }

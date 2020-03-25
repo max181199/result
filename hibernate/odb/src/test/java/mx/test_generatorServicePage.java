@@ -1,7 +1,7 @@
 package mx;
 
 import org.junit.Test;
-import org.testng.Assert;
+import org.junit.Assert;
 import DAO.*;
 import pageEntity.*;
 import ent.*;
@@ -26,7 +26,7 @@ public class test_generatorServicePage {
         List<servicePage> tmp4 = genServicePage.getPageService();
         for( servicePage sep: tmp4){
             if (!sep.getServiceName().equals("push_service")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genServicePage.setServiceName("");
@@ -35,7 +35,7 @@ public class test_generatorServicePage {
         tmp4 = genServicePage.getPageService();
         for( servicePage sep: tmp4){
            if ( !sep.ServiceActual){
-               Assert.assertEquals(0,1);
+               Assert.fail();
            }
         }
         genServicePage.setServiceActualFilter(false);
@@ -46,7 +46,7 @@ public class test_generatorServicePage {
         tmp4 = genServicePage.getPageService();
         for( servicePage sep: tmp4){
             if (!sep.getServiceType().equals("BALANCE")){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genServicePage.setServiceType("");
@@ -56,7 +56,7 @@ public class test_generatorServicePage {
         tmp4 = genServicePage.getPageService();
         for( servicePage sep: tmp4){
             if (sep.getServiceTariff().getId() != 7 ){
-                Assert.assertEquals(0,1);
+                Assert.fail();
             }
         }
         genServicePage.setServiceTariffIdFilter(false);
