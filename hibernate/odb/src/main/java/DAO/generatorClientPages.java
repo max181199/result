@@ -103,10 +103,10 @@ public class generatorClientPages {
           }
 
           if ((TopDate != null) & (DownDate != null)) {
-              //System.out.println(entity.getBegin_time().getTime() + "  ::  " + TopDate.getTime() + " :: "+ DownDate.getTime()  );
               if ((entity.getEnd_time() != null)){
+                 // System.out.println(entity.getBegin_time().getTime() + "  ::  " + TopDate.getTime() + " :: "+ DownDate.getTime()  );
                   if ((entity.getService().getName().equals(SN))
-                          & (entity.getEnd_time().before(TopDate)) & (entity.getBegin_time().after(DownDate))
+                          & (entity.getEnd_time().getTime() < TopDate.getTime()) & (entity.getBegin_time().getTime() > DownDate.getTime())
                   ) {
                       return true;
                   }

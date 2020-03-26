@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="" />
+    <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/initDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/initDB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorClientPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorClientPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorConnectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorConnectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +97,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/hibernate/odb/src/main/java/ent/tariffEntity.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_generatorOneClientPage.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/hibernate/odb/src/test/java/mx/test_day.java" root0="SKIP_INSPECTION" />
   </component>
@@ -138,7 +152,7 @@
       <recent name="$PROJECT_DIR$/ODB/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test_day.dao_day_test">
+  <component name="RunManager" selected="JUnit.test_generatorOneClientPage.genTestOCLP">
     <configuration default="true" type="AntRunConfiguration">
       <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="usage" />
       <method v="2">
@@ -207,36 +221,6 @@
         <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_IDU_ALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="odb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_IDU_ALL" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_day" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="odb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_day" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test_day.dao_day_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
@@ -253,7 +237,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_findByID.dao_findByID_HistoryBalance_ent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_generatorClientPages.genTestCLP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
@@ -262,14 +246,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_findByID" />
-      <option name="METHOD_NAME" value="dao_findByID_HistoryBalance_ent" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_generatorClientPages" />
+      <option name="METHOD_NAME" value="genTestCLP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_findByID.dao_findByID_service_ent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test_generatorConnectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
@@ -278,8 +262,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_findByID" />
-      <option name="METHOD_NAME" value="dao_findByID_service_ent" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_generatorConnectPage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_generatorConnectPage.genTestCOP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_generatorConnectPage" />
+      <option name="METHOD_NAME" value="genTestCOP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_generatorOneClientPage.genTestOCLP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mx" />
+      <option name="MAIN_CLASS_NAME" value="mx.test_generatorOneClientPage" />
+      <option name="METHOD_NAME" value="genTestOCLP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,19 +350,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
-      <item itemvalue="JUnit.test_IDU_ALL" />
-      <item itemvalue="JUnit.test_day" />
-      <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryBalance_ent" />
       <item itemvalue="JUnit.test_day.dao_day_test" />
-      <item itemvalue="JUnit.test_findByID.dao_findByID_service_ent" />
+      <item itemvalue="JUnit.test_generatorConnectPage" />
+      <item itemvalue="JUnit.test_generatorConnectPage.genTestCOP" />
+      <item itemvalue="JUnit.test_generatorClientPages.genTestCLP" />
+      <item itemvalue="JUnit.test_generatorOneClientPage.genTestOCLP" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test_generatorOneClientPage.genTestOCLP" />
+        <item itemvalue="JUnit.test_generatorClientPages.genTestCLP" />
+        <item itemvalue="JUnit.test_generatorConnectPage.genTestCOP" />
+        <item itemvalue="JUnit.test_generatorConnectPage" />
         <item itemvalue="JUnit.test_day.dao_day_test" />
-        <item itemvalue="JUnit.test_findByID.dao_findByID_HistoryBalance_ent" />
-        <item itemvalue="JUnit.test_findByID.dao_findByID_service_ent" />
-        <item itemvalue="JUnit.test_day" />
-        <item itemvalue="JUnit.test_IDU_ALL" />
       </list>
     </recent_temporary>
   </component>
@@ -407,6 +422,10 @@
       <workItem from="1585074206070" duration="129000" />
       <workItem from="1585075103971" duration="16066000" />
       <workItem from="1585155611758" duration="2679000" />
+      <workItem from="1585213087194" duration="27000" />
+      <workItem from="1585218061930" duration="1200000" />
+      <workItem from="1585219891576" duration="620000" />
+      <workItem from="1585220875477" duration="5258000" />
     </task>
     <servers />
   </component>
@@ -488,22 +507,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585158398106">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1585226462047">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
-    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585158398106">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585226462047" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1585226462047">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
-    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585158398105">
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585226462047" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1585226462046">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585158398105" />
-    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585158398106">
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585226462046" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1585226462047">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585158398106" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585226462047" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1583940338891">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -544,10 +563,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1440.877@0.23.1440.877" timestamp="1583311920423" />
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1585155611520">
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1585220874846">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585155611520" />
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585220874846" />
     <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583312549771">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -576,10 +595,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="211" width="670" height="675" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1585138782397" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1583673278385">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1585223237621">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583673278385" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1585223237621" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web$Main.ic" NAME="Main Coverage Results" MODIFIED="1583938646220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

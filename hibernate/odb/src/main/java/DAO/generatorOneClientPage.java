@@ -139,15 +139,60 @@ public class generatorOneClientPage {
             ocp.setContact(tmp_conE);
             List<historyServiceEntity> tmp_hisS = new ArrayList<historyServiceEntity>();
             for ( historyServiceEntity hisS : cle.getHistory_service()){
-                if ( hisS.getEnd_time() == null){ ServiceTopDateFilter=false;}
-                if (
-                        (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName=="")) &
-                                ( (hisS.getState()==ServiceState) | (ServiceStateFilter == false)) &
-                                ((ServiceTopDateFilter==false) || hisS.getEnd_time().before(ServiceTopDate)) &
-                                ((ServiceBottomDateFilter==false) || hisS.getBegin_time().after(ServiceBottomDate))
-                ){
-                    tmp_hisS.add(hisS);
+
+                if ( (!ServiceBottomDateFilter) & (!ServiceTopDateFilter) ){
+                    if (
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                                    ((hisS.getState() == ServiceState) | (ServiceStateFilter == false))
+                    ) {
+                        tmp_hisS.add(hisS);
+                    }
                 }
+
+                if ( (!ServiceBottomDateFilter) & (ServiceTopDateFilter) & (hisS.getEnd_time() != null)){
+
+                    if (
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                                    ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
+                                    (hisS.getEnd_time().getTime() < ServiceTopDate.getTime())
+                    ) {
+                        tmp_hisS.add(hisS);
+                    }
+
+                }
+
+                if ( (ServiceBottomDateFilter) & (!ServiceTopDateFilter) ){
+
+                    if (
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                                    ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
+                                    ( hisS.getBegin_time().getTime() > ServiceBottomDate.getTime())
+                    ) {
+                        tmp_hisS.add(hisS);
+                    }
+
+                }
+
+                if ( (ServiceBottomDateFilter) & (ServiceTopDateFilter) & (hisS.getEnd_time() != null)){
+
+                    if (
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                                    ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
+                                    ( hisS.getEnd_time().getTime() < ServiceTopDate.getTime()) &
+                                    ( hisS.getBegin_time().getTime() > ServiceBottomDate.getTime())
+                    ) {
+                        tmp_hisS.add(hisS);
+                    }
+
+                }
+//                if (
+//                        (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+//                                ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
+//                                ((ServiceTopDateFilter == false) || hisS.getEnd_time().getTime() < ServiceTopDate.getTime()) &
+//                                ((ServiceBottomDateFilter == false) || hisS.getBegin_time().getTime() > ServiceBottomDate.getTime())
+//                ) {
+//                    tmp_hisS.add(hisS);
+//                }
             }
             ocp.setServiceHistory(tmp_hisS);
 

@@ -29,10 +29,15 @@ public class test_generatorConnectPage {
         List<connectPage> trump7 = getConnectPage.getPageConnect();
         for ( connectPage cop : trump7){
             for (serviceEntity see : cop.getAddServiceList()){
-                if ((see.getId() == 1) || (see.getId() == 2)){
+                if ((see.getId() == 1) || (see.getId() == 2) || (see.getId() == 7)){
                     Assert.fail();
                 }
             }
+            for (serviceEntity see : cop.getAvaibleServiceList()){
+                if (see.getId() == 7){
+                    Assert.fail();
+                }
+            } // New Test for AvaibleServiceList
         }
     }
 

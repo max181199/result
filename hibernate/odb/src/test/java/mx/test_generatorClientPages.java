@@ -59,12 +59,13 @@ public class test_generatorClientPages {
         }
         genClientPage.setServiceName("");
 
+        //"TEST TOP"
         genClientPage.setServiceName("push_service");
         SimpleDateFormat ft = new SimpleDateFormat ("dd.MM.yyyy");
         Date parsingDate = new Date();
         try {
             parsingDate = ft.parse("28.2.2000");
-            System.out.println(parsingDate);
+            //System.out.println(parsingDate);
         }catch (ParseException e) {
             System.out.println("Нераспаршена с помощью " + ft);
         }
@@ -76,12 +77,13 @@ public class test_generatorClientPages {
         genClientPage.setServiceTopDate(null);
 
 
+        //"TEST LOW"
         genClientPage.setServiceName("push_service");
         ft = new SimpleDateFormat ("dd.MM.yyyy");
         parsingDate = new Date();
         try {
             parsingDate = ft.parse("28.2.2000");
-            System.out.println(parsingDate);
+            //System.out.println(parsingDate);
         }catch (ParseException e) {
             System.out.println("Нераспаршена с помощью " + ft);
         }
@@ -89,6 +91,27 @@ public class test_generatorClientPages {
         tmp = genClientPage.getPageClient();
         for ( clientPage ent : tmp){
             if (ent.getClientName() == "Milton Bostock"){
+                Assert.fail();
+            }
+        }
+
+        //TEST BETWEEN
+        genClientPage.setServiceName("test");
+        ft = new SimpleDateFormat ("dd.MM.yyyy");
+        Date parsingDateTop = new Date();
+        Date parsingDateButtom = new Date();
+        try {
+            parsingDateTop = ft.parse("7.1.1998");
+            parsingDateButtom = ft.parse("7.1.1996");
+            //System.out.println(parsingDate);
+        }catch (ParseException e) {
+            System.out.println("Нераспаршена с помощью " + ft);
+        }
+        genClientPage.setServiceTopDate(parsingDateTop);
+        genClientPage.setServiceDownDate(parsingDateButtom);
+        tmp = genClientPage.getPageClient();
+        for ( clientPage ent : tmp){
+            if (ent.getClientName().equals("Milton Bostock")){
                 Assert.fail();
             }
         }

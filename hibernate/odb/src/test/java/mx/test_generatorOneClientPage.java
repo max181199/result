@@ -29,6 +29,21 @@ public class test_generatorOneClientPage {
             if (!ent.getName().equals("Milton Bostock")){
                 Assert.fail();
             }
+            for (addresEntity ade : ent.getAddress()){
+                if (!ade.getAddres().equals("75 Mill Pond Avenue North Bergen, NJ 07047")){
+                    Assert.fail();
+                }
+            }
+            for (phoneEntity phe : ent.getPhone()){
+                if (!phe.getPhone().equals("8-800-555-3535")){
+                    Assert.fail();
+                }
+            }
+            for (emailEntity ema : ent.getEmail()){
+                if (!ema.getEmail().equals("mil_bos@mail.ru")){
+                    Assert.fail();
+                }
+            }
         }
 
 
@@ -102,12 +117,43 @@ public class test_generatorOneClientPage {
         genOneClientPage.setServiceBottomDate(calendar.getTime());
         tmp2 = genOneClientPage.getPageOneClient();
         for ( oneClientPage ent : tmp2){
+            //System.out.println(tmp2);
             for (historyServiceEntity hse : ent.getServiceHistory()){
                 if ( (int)hse.getId() != 1){
                     Assert.fail();
                 }
             }
         }
+        genOneClientPage.setServiceTopDateFilter(false);
+        genOneClientPage.setServiceBottomDateFilter(false);
+
+        calendar = new GregorianCalendar(1998 , 4 , 23);
+        genOneClientPage.setServiceBottomDateFilter(true);
+        genOneClientPage.setServiceBottomDate(calendar.getTime());
+        tmp2 = genOneClientPage.getPageOneClient();
+        for ( oneClientPage ent : tmp2){
+            //System.out.println(tmp2);
+            for (historyServiceEntity hse : ent.getServiceHistory()){
+                if ( ((int)hse.getId() != 1) ){
+                    Assert.fail();
+                }
+            }
+        }
+        genOneClientPage.setServiceBottomDateFilter(false);
+
+        calendar = new GregorianCalendar(1998 , 1 , 1);
+        genOneClientPage.setServiceTopDateFilter(true);
+        genOneClientPage.setServiceTopDate(calendar.getTime());
+        tmp2 = genOneClientPage.getPageOneClient();
+        for ( oneClientPage ent : tmp2){
+            //System.out.println(tmp2);
+            for (historyServiceEntity hse : ent.getServiceHistory()){
+                if ( ((int)hse.getId() != 17) ){
+                    Assert.fail();
+                }
+            }
+        }
+        genOneClientPage.setServiceBottomDateFilter(false);
 
     }
 }
