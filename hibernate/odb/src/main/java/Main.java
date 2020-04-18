@@ -46,6 +46,7 @@ public class Main {
         System.out.println("/////////       END DATA DESCRIBE     /////////");
         System.out.println("<--------------------------------------------->");
 
+        genClientPage.setServiceName("");
         List<clientPage>  trump = genClientPage.getPageClient();
         for ( clientPage ent : trump){
             System.out.println(ent);
@@ -55,21 +56,26 @@ public class Main {
         System.out.println("<--------------------------------------------->");
 
         genOneClientPage.setClientName("");
+
         genOneClientPage.setBalanceNameService("");
         genOneClientPage.setBalanceCount(400);
         genOneClientPage.setBalanceCountFilter(false);
         Calendar calendar = new GregorianCalendar(1999, 0 , 8);
         genOneClientPage.setBalanceDate(calendar.getTime());
         genOneClientPage.setBalanceDateFilter(false);
+
+
         genOneClientPage.setServiceServiceName("");
         genOneClientPage.setServiceStateFilter(false);
         genOneClientPage.setServiceState(123);
         calendar = new GregorianCalendar(2020 , 4 , 23);
-        genOneClientPage.setServiceTopDateFilter(true);
+        genOneClientPage.setServiceTopDateFilter(false);
         genOneClientPage.setServiceTopDate(calendar.getTime());
-        calendar = new GregorianCalendar(2020 , 4 , 23);
-        genOneClientPage.setServiceBottomDateFilter(false);
+        calendar = new GregorianCalendar(1997 , 4 , 23);
+        genOneClientPage.setServiceBottomDateFilter(true);
         genOneClientPage.setServiceBottomDate(calendar.getTime());
+
+
         List<oneClientPage> trump2 = genOneClientPage.getPageOneClient();
         for ( oneClientPage ent : trump2){
             System.out.println(ent);

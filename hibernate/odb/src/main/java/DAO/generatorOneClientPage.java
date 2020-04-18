@@ -142,7 +142,7 @@ public class generatorOneClientPage {
 
                 if ( (!ServiceBottomDateFilter) & (!ServiceTopDateFilter) ){
                     if (
-                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName.equals(""))) &
                                     ((hisS.getState() == ServiceState) | (ServiceStateFilter == false))
                     ) {
                         tmp_hisS.add(hisS);
@@ -152,9 +152,9 @@ public class generatorOneClientPage {
                 if ( (!ServiceBottomDateFilter) & (ServiceTopDateFilter) & (hisS.getEnd_time() != null)){
 
                     if (
-                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName.equals(""))) &
                                     ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
-                                    (hisS.getEnd_time().getTime() < ServiceTopDate.getTime())
+                                    ((hisS.getEnd_time().getTime() - ServiceTopDate.getTime())/(24*60*60*1000) <=0)
                     ) {
                         tmp_hisS.add(hisS);
                     }
@@ -164,10 +164,11 @@ public class generatorOneClientPage {
                 if ( (ServiceBottomDateFilter) & (!ServiceTopDateFilter) ){
 
                     if (
-                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName.equals(""))) &
                                     ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
-                                    ( hisS.getBegin_time().getTime() > ServiceBottomDate.getTime())
+                                    ( (hisS.getBegin_time().getTime() - ServiceBottomDate.getTime())/(24*60*60*1000)>=0)
                     ) {
+                        System.out.println("HERE 1");
                         tmp_hisS.add(hisS);
                     }
 
@@ -176,11 +177,12 @@ public class generatorOneClientPage {
                 if ( (ServiceBottomDateFilter) & (ServiceTopDateFilter) & (hisS.getEnd_time() != null)){
 
                     if (
-                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName == "")) &
+                            (hisS.getService().getName().equals(ServiceServiceName) || (ServiceServiceName.equals(""))) &
                                     ((hisS.getState() == ServiceState) | (ServiceStateFilter == false)) &
-                                    ( hisS.getEnd_time().getTime() < ServiceTopDate.getTime()) &
-                                    ( hisS.getBegin_time().getTime() > ServiceBottomDate.getTime())
+                                    ( (hisS.getEnd_time().getTime() - ServiceTopDate.getTime())/(24*60*60*1000) <=0) &
+                                    ( (hisS.getBegin_time().getTime() - ServiceBottomDate.getTime())/(24*60*60*1000)>=0)
                     ) {
+                        System.out.println("HERE 2");
                         tmp_hisS.add(hisS);
                     }
 
@@ -201,7 +203,7 @@ public class generatorOneClientPage {
                 if( ((hisB.getService().getName().equals(BalanceNameService)) || (BalanceNameService.equals("")))
                         & ( (BalanceCountFilter == false) || (hisB.getSumm()==BalanceCount)) &
                         ( (BalanceDateFilter == false) || ( (((hisB.getOp_time().getTime() - BalanceDate.getTime())
-                                / (24 * 60 * 60 * 1000) ) == 0) & (BalanceDate.before(hisB.getOp_time())) )  )
+                                / (24 * 60 * 60 * 1000) ) >= 0) & (BalanceDate.before(hisB.getOp_time())) )  )
                 ){
                     tmp_hisB.add(hisB);
                 }

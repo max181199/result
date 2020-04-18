@@ -33,6 +33,8 @@ public class generatorContactPage {
         for ( contactEntity coe : tmpContact){
             contactPage cop = new contactPage();
             cop.setContactName(coe.getName());
+            clientEntity ce = coe.getClient();
+            cop.setClientKeyID(ce.getId());
             cop.setSecretContactKey(coe.getId());
             List<addresEntity> tmp_adr = new ArrayList<addresEntity>();
             tmp_adr.addAll(coe.getAddres());

@@ -37,6 +37,7 @@ public class generatorTariffPage {
             tap.setTariffDaypaymode(tae.getDaypaymode());
             tap.setTariffId(tae.getId());
             tap.setTariffValue(tae.getValue());
+            tap.setServiceKeyId(tae.getService().getId());
             result.add(tap);
         }
         return result;

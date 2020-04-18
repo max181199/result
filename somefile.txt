@@ -1,25 +1,25 @@
 <--------------------------------------------->
 /////////       END DATA DESCRIBE     /////////
 <--------------------------------------------->
-мар 25, 2020 3:45:47 PM org.hibernate.Version logVersion
+апр 16, 2020 5:28:34 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 5.4.12.Final
-мар 25, 2020 3:45:48 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+апр 16, 2020 5:28:35 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-мар 25, 2020 3:45:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+апр 16, 2020 5:28:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-мар 25, 2020 3:45:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+апр 16, 2020 5:28:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/web]
-мар 25, 2020 3:45:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+апр 16, 2020 5:28:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {user=pc, password=****}
-мар 25, 2020 3:45:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+апр 16, 2020 5:28:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-мар 25, 2020 3:45:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
-INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-мар 25, 2020 3:45:48 PM org.hibernate.dialect.Dialect <init>
+апр 16, 2020 5:28:35 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 100000 (min=1)
+апр 16, 2020 5:28:35 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-мар 25, 2020 3:45:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b8a7e43] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-мар 25, 2020 3:45:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+апр 16, 2020 5:28:36 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f80fa43] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+апр 16, 2020 5:28:36 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 PageClients :: 
   ClientName= Milton Bostock, balance= 0.0, Debt= 0.0  :: SECRET_KEY  ::   1
@@ -36,24 +36,38 @@ PageClients ::
 PageClients :: 
   ClientName= Armitage Company, balance= 10000.0, Debt= 0.0  :: SECRET_KEY  ::   5
 
+PageClients :: 
+  ClientName= Test Client, balance= 0.0, Debt= 0.0  :: SECRET_KEY  ::   10
+
 <--------------------------------------------->
 /////////          CLP TEST           /////////
 <--------------------------------------------->
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
+HERE 1
 OneClientPage::
   Name= Milton Bostock,  max_credit=500.0,  max_credit_day=60.0  :: SECRET_KEY  ::   1
   EntityContact::{contact_id=1, client.id1, name='Milton Bostock'}
     EntityPhoneContact::{id=1, contact_id=1, phone=8-800-555-3535 }
     EntityAddressContact::{id=1, contact_id=1, addres=75 Mill Pond Avenue North Bergen, NJ 07047 }
     EntityEmailContact::{id=1, contact_id=1, email=mil_bos@mail.ru }
-  EntityHistoryService::{service_history_id=2, client_id=1, service_id=4, begin_time=1998-01-08 04:05:06.0, end_time=null, state=50.0}
-  EntityHistoryService::{service_history_id=4, client_id=1, service_id=6, begin_time=1996-01-08 04:05:06.0, end_time=null, state=77.0}
   EntityHistoryService::{service_history_id=1, client_id=1, service_id=3, begin_time=1999-01-08 04:05:06.0, end_time=null, state=100.0}
-  EntityHistoryService::{service_history_id=3, client_id=1, service_id=5, begin_time=1997-01-08 04:05:06.0, end_time=null, state=0.0}
-  EntityHistoryService::{service_history_id=20, client_id=1, service_id=4, begin_time=2020-03-25 15:13:10.52, end_time=2020-03-25 15:13:10.535, state=12345.0}
-  EntityHistoryBalance::{balance_history_id=4, client_id=1, service_id=2, op_time=1996-01-08 07:05:06.0, summ=200.0}
+  EntityHistoryService::{service_history_id=2, client_id=1, service_id=4, begin_time=1998-01-08 04:05:06.0, end_time=null, state=50.0}
+  EntityHistoryBalance::{balance_history_id=2, client_id=1, service_id=2, op_time=1998-01-08 05:05:06.0, summ=400.0}
   EntityHistoryBalance::{balance_history_id=3, client_id=1, service_id=1, op_time=1999-01-08 06:05:06.0, summ=500.0}
   EntityHistoryBalance::{balance_history_id=1, client_id=1, service_id=1, op_time=1997-01-08 04:05:06.0, summ=500.0}
-  EntityHistoryBalance::{balance_history_id=2, client_id=1, service_id=2, op_time=1998-01-08 05:05:06.0, summ=400.0}
+  EntityHistoryBalance::{balance_history_id=4, client_id=1, service_id=2, op_time=1996-01-08 07:05:06.0, summ=200.0}
 
 
 OneClientPage::
@@ -62,12 +76,12 @@ OneClientPage::
     EntityPhoneContact::{id=2, contact_id=2, phone=8-202-555-0102 }
     EntityAddressContact::{id=2, contact_id=2, addres=856 Sleepy Hollow Rd.Yakima, WA 98908 }
     EntityEmailContact::{id=2, contact_id=2, email=maz_bur@mail.ru }
-  EntityHistoryService::{service_history_id=11, client_id=2, service_id=5, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=67.0}
-  EntityHistoryService::{service_history_id=14, client_id=2, service_id=6, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=32.0}
-  EntityHistoryService::{service_history_id=8, client_id=2, service_id=4, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=34.0}
+  EntityHistoryService::{service_history_id=8, client_id=2, service_id=4, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=34.0}
+  EntityHistoryService::{service_history_id=14, client_id=2, service_id=6, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=32.0}
+  EntityHistoryService::{service_history_id=11, client_id=2, service_id=5, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=67.0}
+  EntityHistoryBalance::{balance_history_id=7, client_id=2, service_id=1, op_time=1999-01-08 10:05:06.0, summ=500.0}
   EntityHistoryBalance::{balance_history_id=6, client_id=2, service_id=1, op_time=1999-01-08 09:05:06.0, summ=500.0}
   EntityHistoryBalance::{balance_history_id=5, client_id=2, service_id=1, op_time=1999-01-08 08:05:06.0, summ=500.0}
-  EntityHistoryBalance::{balance_history_id=7, client_id=2, service_id=1, op_time=1999-01-08 10:05:06.0, summ=500.0}
   EntityHistoryBalance::{balance_history_id=8, client_id=2, service_id=1, op_time=1999-01-08 11:05:06.0, summ=500.0}
 
 
@@ -77,9 +91,9 @@ OneClientPage::
     EntityPhoneContact::{id=3, contact_id=3, phone=8-202-555-0145 }
     EntityAddressContact::{id=3, contact_id=3, addres=970 Golf Dr. Maumee, OH 43537 }
     EntityEmailContact::{id=3, contact_id=3, email=zay_gou@mail.ru }
-  EntityHistoryService::{service_history_id=5, client_id=3, service_id=3, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=2.0}
-  EntityHistoryService::{service_history_id=15, client_id=3, service_id=6, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=45.0}
-  EntityHistoryService::{service_history_id=12, client_id=3, service_id=5, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=345.0}
+  EntityHistoryService::{service_history_id=5, client_id=3, service_id=3, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=2.0}
+  EntityHistoryService::{service_history_id=15, client_id=3, service_id=6, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=45.0}
+  EntityHistoryService::{service_history_id=12, client_id=3, service_id=5, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=345.0}
 
 
 OneClientPage::
@@ -90,28 +104,36 @@ OneClientPage::
     EntityAddressContact::{id=4, contact_id=4, addres=3 Thomas St. Apt 72 Perth Amboy, NJ 08861 }
     EntityEmailContact::{id=5, contact_id=4, email=sha_har@mail.ru }
     EntityEmailContact::{id=4, contact_id=4, email=har_sha@mail.ru }
-  EntityHistoryService::{service_history_id=9, client_id=4, service_id=4, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=44.0}
-  EntityHistoryService::{service_history_id=6, client_id=4, service_id=3, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=33.0}
+  EntityHistoryService::{service_history_id=6, client_id=4, service_id=3, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=33.0}
   EntityHistoryService::{service_history_id=16, client_id=4, service_id=6, begin_time=2021-01-08 04:05:06.0, end_time=null, state=233.0}
+  EntityHistoryService::{service_history_id=9, client_id=4, service_id=4, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=44.0}
 
 
 OneClientPage::
   Name= Armitage Company,  max_credit=10000.0,  max_credit_day=30.0  :: SECRET_KEY  ::   5
-  EntityContact::{contact_id=7, client.id5, name='Kaia Russo'}
-    EntityPhoneContact::{id=7, contact_id=7, phone=8-202-555-0152 }
-    EntityAddressContact::{id=6, contact_id=7, addres=8376 E. Wentworth St. Middletown, CT 06457 }
-    EntityEmailContact::{id=7, contact_id=7, email=kai_rus@mail.ru }
   EntityContact::{contact_id=8, client.id5, name='Sorcha Vo'}
     EntityPhoneContact::{id=8, contact_id=8, phone=8-202-555-0120 }
     EntityAddressContact::{id=7, contact_id=8, addres=8376 E. Wentworth St. Middletown, CT 06457 }
     EntityEmailContact::{id=8, contact_id=8, email=sor_vo_@mail.ru }
+  EntityContact::{contact_id=7, client.id5, name='Kaia Russo'}
+    EntityPhoneContact::{id=7, contact_id=7, phone=8-202-555-0152 }
+    EntityAddressContact::{id=6, contact_id=7, addres=8376 E. Wentworth St. Middletown, CT 06457 }
+    EntityEmailContact::{id=7, contact_id=7, email=kai_rus@mail.ru }
   EntityContact::{contact_id=6, client.id5, name='Karolina Rose'}
     EntityPhoneContact::{id=6, contact_id=6, phone=8-202-555-0145 }
     EntityAddressContact::{id=5, contact_id=6, addres=8376 E. Wentworth St. Middletown, CT 06457 }
     EntityEmailContact::{id=6, contact_id=6, email=kar_ros@mail.ru }
-  EntityHistoryService::{service_history_id=10, client_id=5, service_id=4, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=123.0}
-  EntityHistoryService::{service_history_id=7, client_id=5, service_id=3, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=123.0}
-  EntityHistoryService::{service_history_id=13, client_id=5, service_id=5, begin_time=2020-03-24 21:28:41.458637, end_time=null, state=78.0}
+  EntityHistoryService::{service_history_id=7, client_id=5, service_id=3, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=123.0}
+  EntityHistoryService::{service_history_id=13, client_id=5, service_id=5, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=78.0}
+  EntityHistoryService::{service_history_id=10, client_id=5, service_id=4, begin_time=2020-04-16 00:50:58.551582, end_time=null, state=123.0}
+
+
+OneClientPage::
+  Name= Test Client,  max_credit=123.0,  max_credit_day=13.0  :: SECRET_KEY  ::   10
+  EntityContact::{contact_id=10, client.id10, name='Test Contact'}
+    EntityPhoneContact::{id=10, contact_id=10, phone=8-800-555-35-35 }
+    EntityAddressContact::{id=10, contact_id=10, addres=Moscow }
+    EntityEmailContact::{id=10, contact_id=10, email=test@mail.list }
 
 
 <--------------------------------------------->
@@ -138,10 +160,10 @@ ContactPage::
 ContactPage:: 
   ContactName= Harriet Shaw
     EntityAddressContact::{id=4, contact_id=4, addres=3 Thomas St. Apt 72 Perth Amboy, NJ 08861 }
-    EntityPhoneContact::{id=4, contact_id=4, phone=8-202-555-0111 }
     EntityPhoneContact::{id=5, contact_id=4, phone=8-202-555-7777 }
-    EntityEmailContact::{id=5, contact_id=4, email=sha_har@mail.ru }
+    EntityPhoneContact::{id=4, contact_id=4, phone=8-202-555-0111 }
     EntityEmailContact::{id=4, contact_id=4, email=har_sha@mail.ru }
+    EntityEmailContact::{id=5, contact_id=4, email=sha_har@mail.ru }
 
 ContactPage:: 
   ContactName= Karolina Rose
@@ -161,32 +183,42 @@ ContactPage::
     EntityPhoneContact::{id=8, contact_id=8, phone=8-202-555-0120 }
     EntityEmailContact::{id=8, contact_id=8, email=sor_vo_@mail.ru }
 
+ContactPage:: 
+  ContactName= Test Contact
+    EntityAddressContact::{id=10, contact_id=10, addres=Moscow }
+    EntityPhoneContact::{id=10, contact_id=10, phone=8-800-555-35-35 }
+    EntityEmailContact::{id=10, contact_id=10, email=test@mail.list }
+
 <--------------------------------------------->
 /////////           CP TEST           /////////
 <--------------------------------------------->
 ServicePage:: 
   ServiceName=BalanceUP  ServiceType=BALANCE  ServiceActual=true  :: SECRET :: 1
-    EntityTariff::{tariff_id=1, cost=0.0, state=false, daypaymode=true, value=100.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=1, cost=0.0, state=true, daypaymode=true, value=100.0,create_time=2020-04-16 00:50:58.551582}
 
 ServicePage:: 
   ServiceName=BalanceDOWN  ServiceType=BALANCE  ServiceActual=true  :: SECRET :: 2
-    EntityTariff::{tariff_id=2, cost=200.0, state=false, daypaymode=true, value=200.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=10000011, cost=100.0, state=true, daypaymode=true, value=200.0,create_time=2020-04-16 10:33:20.663}
 
 ServicePage:: 
   ServiceName=push_service  ServiceType=PUSH  ServiceActual=true  :: SECRET :: 3
-    EntityTariff::{tariff_id=4, cost=200.0, state=true, daypaymode=false, value=200.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=4, cost=200.0, state=true, daypaymode=false, value=123.0,create_time=1999-01-08 04:05:06.0}
 
 ServicePage:: 
   ServiceName=internet  ServiceType=INTERNET  ServiceActual=true  :: SECRET :: 4
-    EntityTariff::{tariff_id=5, cost=300.0, state=false, daypaymode=false, value=100.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=5, cost=300.0, state=true, daypaymode=false, value=100.0,create_time=2020-04-16 00:50:58.551582}
 
 ServicePage:: 
   ServiceName=sms  ServiceType=SMS  ServiceActual=true  :: SECRET :: 5
-    EntityTariff::{tariff_id=6, cost=400.0, state=true, daypaymode=true, value=2.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=6, cost=400.0, state=true, daypaymode=true, value=2.0,create_time=2020-04-16 00:50:58.551582}
 
 ServicePage:: 
   ServiceName=bell  ServiceType=BELL  ServiceActual=true  :: SECRET :: 6
-    EntityTariff::{tariff_id=7, cost=2.0, state=false, daypaymode=true, value=777.0,create_time=2020-03-24 21:28:41.458637}
+    EntityTariff::{tariff_id=7, cost=2.0, state=true, daypaymode=true, value=777.0,create_time=2020-04-16 00:50:58.551582}
+
+ServicePage:: 
+  ServiceName=test  ServiceType=TEST  ServiceActual=false  :: SECRET :: 7
+    null
 
 <--------------------------------------------->
 /////////           SP TEST           /////////
@@ -195,50 +227,54 @@ OneServicePage::
   ServiceName= BalanceUP  Type= BALANCE  Actual=true  :: SECRET ::  1
   Describe::
     INCREASE BALANCE
-  EntityTariff::{tariff_id=1, cost=0.0, state=false, daypaymode=true, value=100.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=1, cost=0.0, state=true, daypaymode=true, value=100.0,create_time=2020-04-16 00:50:58.551582}
 
 OneServicePage:: 
   ServiceName= BalanceDOWN  Type= BALANCE  Actual=true  :: SECRET ::  2
   Describe::
     DECREASE BALANCE
-  EntityTariff::{tariff_id=3, cost=300.0, state=true, daypaymode=true, value=300.0,create_time=1999-01-08 04:05:06.0}
-  EntityTariff::{tariff_id=2, cost=200.0, state=false, daypaymode=true, value=200.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=2, cost=200.0, state=false, daypaymode=true, value=200.0,create_time=2020-04-16 00:50:58.551582}
+  EntityTariff::{tariff_id=10000011, cost=100.0, state=true, daypaymode=true, value=200.0,create_time=2020-04-16 10:33:20.663}
+  EntityTariff::{tariff_id=3, cost=300.0, state=false, daypaymode=true, value=300.0,create_time=1999-01-08 04:05:06.0}
+  EntityTariff::{tariff_id=10, cost=200.0, state=false, daypaymode=false, value=200.0,create_time=2020-04-16 10:30:45.041}
 
 OneServicePage:: 
   ServiceName= push_service  Type= PUSH  Actual=true  :: SECRET ::  3
   Describe::
     PUSH SERVICE
-  EntityTariff::{tariff_id=4, cost=200.0, state=true, daypaymode=false, value=200.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=4, cost=200.0, state=true, daypaymode=false, value=123.0,create_time=1999-01-08 04:05:06.0}
 
 OneServicePage:: 
   ServiceName= internet  Type= INTERNET  Actual=true  :: SECRET ::  4
   Describe::
     PAY FOR INTERNET
-  EntityTariff::{tariff_id=5, cost=300.0, state=false, daypaymode=false, value=100.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=5, cost=300.0, state=true, daypaymode=false, value=100.0,create_time=2020-04-16 00:50:58.551582}
 
 OneServicePage:: 
   ServiceName= sms  Type= SMS  Actual=true  :: SECRET ::  5
   Describe::
     SMS SERVICE
-  EntityTariff::{tariff_id=6, cost=400.0, state=true, daypaymode=true, value=2.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=6, cost=400.0, state=true, daypaymode=true, value=2.0,create_time=2020-04-16 00:50:58.551582}
 
 OneServicePage:: 
   ServiceName= bell  Type= BELL  Actual=true  :: SECRET ::  6
   Describe::
     BELL SERVICE
-  EntityTariff::{tariff_id=7, cost=2.0, state=false, daypaymode=true, value=777.0,create_time=2020-03-24 21:28:41.458637}
+  EntityTariff::{tariff_id=7, cost=2.0, state=true, daypaymode=true, value=777.0,create_time=2020-04-16 00:50:58.551582}
+
+OneServicePage:: 
+  ServiceName= test  Type= TEST  Actual=false  :: SECRET ::  7
+  Describe::
+    ONLY FOR TEST
 
 <--------------------------------------------->
 /////////           OSP TEST          /////////
 <--------------------------------------------->
 tariffPage::
-  TariffId=2, TariffCost=200.0, TariffValue=200.0, TariffDaypaymode=true
+  TariffId=1, TariffCost=0.0, TariffValue=100.0, TariffDaypaymode=true
 
 tariffPage::
-  TariffId=3, TariffCost=300.0, TariffValue=300.0, TariffDaypaymode=true
-
-tariffPage::
-  TariffId=4, TariffCost=200.0, TariffValue=200.0, TariffDaypaymode=false
+  TariffId=4, TariffCost=200.0, TariffValue=123.0, TariffDaypaymode=false
 
 tariffPage::
   TariffId=5, TariffCost=300.0, TariffValue=100.0, TariffDaypaymode=false
@@ -250,29 +286,25 @@ tariffPage::
   TariffId=7, TariffCost=2.0, TariffValue=777.0, TariffDaypaymode=true
 
 tariffPage::
-  TariffId=1, TariffCost=0.0, TariffValue=100.0, TariffDaypaymode=true
+  TariffId=10000011, TariffCost=100.0, TariffValue=200.0, TariffDaypaymode=true
+
+tariffPage::
+  TariffId=2, TariffCost=200.0, TariffValue=200.0, TariffDaypaymode=true
+
+tariffPage::
+  TariffId=10, TariffCost=200.0, TariffValue=200.0, TariffDaypaymode=false
+
+tariffPage::
+  TariffId=3, TariffCost=300.0, TariffValue=300.0, TariffDaypaymode=true
 
 <--------------------------------------------->
 /////////           TP TEST           /////////
 <--------------------------------------------->
 ConnectPage:: 
   Current::
-    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
-    EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
-    EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
     EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
-  Available::
-    EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
-    EntityService::{service_id=2, type=BALANCE, state=true, describe=DECREASE BALANCE, name=BalanceDOWN}
-    EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
-    EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
-    EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
     EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
-
-ConnectPage:: 
-  Current::
     EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
-    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
     EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
   Available::
     EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
@@ -284,9 +316,22 @@ ConnectPage::
 
 ConnectPage:: 
   Current::
-    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
     EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
+    EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
+    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
+  Available::
+    EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
+    EntityService::{service_id=2, type=BALANCE, state=true, describe=DECREASE BALANCE, name=BalanceDOWN}
     EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
+    EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
+    EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
+    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
+
+ConnectPage:: 
+  Current::
+    EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
+    EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
+    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
   Available::
     EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
     EntityService::{service_id=2, type=BALANCE, state=true, describe=DECREASE BALANCE, name=BalanceDOWN}
@@ -313,6 +358,16 @@ ConnectPage::
     EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
     EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
     EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
+  Available::
+    EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
+    EntityService::{service_id=2, type=BALANCE, state=true, describe=DECREASE BALANCE, name=BalanceDOWN}
+    EntityService::{service_id=3, type=PUSH, state=true, describe=PUSH SERVICE, name=push_service}
+    EntityService::{service_id=4, type=INTERNET, state=true, describe=PAY FOR INTERNET, name=internet}
+    EntityService::{service_id=5, type=SMS, state=true, describe=SMS SERVICE, name=sms}
+    EntityService::{service_id=6, type=BELL, state=true, describe=BELL SERVICE, name=bell}
+
+ConnectPage:: 
+  Current::
   Available::
     EntityService::{service_id=1, type=BALANCE, state=true, describe=INCREASE BALANCE, name=BalanceUP}
     EntityService::{service_id=2, type=BALANCE, state=true, describe=DECREASE BALANCE, name=BalanceDOWN}

@@ -48,12 +48,12 @@ INSERT INTO addres VALUES (7,8,'8376 E. Wentworth St. Middletown, CT 06457');
 INSERT INTO email VALUES (8,8,'sor_vo_@mail.ru');
 
 INSERT INTO tariff VALUES (1,1,0,true,true,100);
-INSERT INTO tariff VALUES (2,2,200,false,true,200);
-INSERT INTO tariff VALUES (3,2,300,true,true,300,'1999-01-08 04:05:06');
-INSERT INTO tariff VALUES (4,3,200,true,false,200);
-INSERT INTO tariff VALUES (5,4,300,false,false,100);
+INSERT INTO tariff VALUES (2,2,200,true,true,200);
+INSERT INTO tariff VALUES (3,2,300,false,true,300,'1999-01-08 04:05:06');
+INSERT INTO tariff VALUES (4,3,200,true,false,123,'1999-01-08 04:05:06');
+INSERT INTO tariff VALUES (5,4,300,true,false,100);
 INSERT INTO tariff VALUES (6,5,400,true,true,2);
-INSERT INTO tariff VALUES (7,6,2,false,true,777);
+INSERT INTO tariff VALUES (7,6,2,true,true,777);
 
 INSERT INTO service VALUES (1,'BALANCE','INCREASE BALANCE','BalanceUP',true);
 INSERT INTO service VALUES (2,'BALANCE','DECREASE BALANCE','BalanceDOWN',true);

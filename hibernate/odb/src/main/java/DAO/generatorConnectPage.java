@@ -42,10 +42,23 @@ public class generatorConnectPage {
                 }
             }
             cop.setAvaibleServiceList(tmpSE1);
+
             List<serviceEntity> tmpSE2 = new ArrayList<serviceEntity>();
             for ( historyServiceEntity hse : cle.getHistory_service()){
                 if( hse.getEnd_time() == null) {
-                    tmpSE2.add(hse.getService());
+                    if(tmpSE2.isEmpty()) {
+                        tmpSE2.add(hse.getService());
+                    }else {
+                        boolean flag = true;
+                        for ( serviceEntity sgp : tmpSE2){
+                            if( sgp.getId() == hse.getService().getId()){
+                                flag=false;
+                            }
+                        }
+                        if(flag){
+                            tmpSE2.add(hse.getService());
+                        }
+                    }
                 }
             }
             cop.setAddServiceList(tmpSE2);

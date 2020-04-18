@@ -76,6 +76,9 @@ public class generatorServicePage {
             sep.setServiceActual(see.getState());
             sep.setServiceName(see.getName());
             sep.setServiceType(see.getType());
+            if (see.getTariff() == null){
+                setServiceTariffIdFilter(false);
+            }
             Date tmpD = null;
             for ( tariffEntity tmpT : see.getTariff()){
                 if (tmpD == null){
@@ -89,12 +92,24 @@ public class generatorServicePage {
                     }
                 }
             }
-            if (
-                    ( (see.getState()==true) || (ServiceActualFilter==false)) &
-                            ( (ServiceType.equals("")) || ServiceType.equals(see.getType())) &
-                            ( (ServiceTariffIdFilter==false) || (sep.getServiceTariff().getId() == ServiceTariffId))
-            ){
-                result.add(sep);
+
+            if (sep.getServiceTariff() != null){
+                if (
+                        ( (see.getState()==true) || (ServiceActualFilter==false)) &
+                                ( (ServiceType.equals("")) || ServiceType.equals(see.getType())) &
+                                ( (ServiceTariffIdFilter==false) || (sep.getServiceTariff().getId() == ServiceTariffId))
+                ){
+                    result.add(sep);
+                }
+            }
+            else{
+                if (
+                        ( (see.getState()==true) || (ServiceActualFilter==false)) &
+                                ( (ServiceType.equals("")) || ServiceType.equals(see.getType())) &
+                                ( (ServiceTariffIdFilter==false))
+                ){
+                    result.add(sep);
+                }
             }
         }
         session.getTransaction().commit();

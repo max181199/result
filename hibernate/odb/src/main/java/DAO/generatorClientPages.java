@@ -132,10 +132,11 @@ public class generatorClientPages {
             if ( (((balance == 2) & (ent.getAccount().getBalance() >= 0)) ||
                   ((balance == 1) & (ent.getAccount().getBalance() < 0))  || (balance==0)) &
                   ((debt) & (ent.getAccount().getCredit_day() > 0) || !(debt)) &
-                    ((ServiceFilterOne(ent.getHistory_service(),serviceName,serviceTopDate,serviceDownDate)) || (serviceName == ""))
+                    ((ServiceFilterOne(ent.getHistory_service(),serviceName,serviceTopDate,serviceDownDate)) || (serviceName.equals("")))
             ){
                 clientPage page = new clientPage();
                 page.setSecretKey(ent.getId());
+
                 page.setClientName(ent.getName());
                 page.setClientBalance(ent.getAccount().getBalance());
                 page.setClientDebt(ent.getAccount().getCredit_day());

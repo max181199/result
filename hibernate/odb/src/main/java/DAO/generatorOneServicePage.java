@@ -159,7 +159,7 @@ public class generatorOneServicePage {
                                 ((ServiceTariffActualFilter == false) || (ServiceTariffActual == tae.getState())) &
                                 ((ServiceTariffCostFilter == false) || (ServiceTariffCost == tae.getCost())) &
                                 ((ServiceTariffDaypaymodeFilter==false)||(ServiceTariffDaypaymode == tae.getDaypaymode())) &
-                                ((ServiceTariffDateFilter==false)||(((ServiceTariffDate.getTime()-tae.getCreate_time().getTime())/(24*60*60*1000)==0)&(ServiceTariffDate.before(tae.getCreate_time())))) &
+                                ((ServiceTariffDateFilter==false)||(((ServiceTariffDate.getTime()-tae.getCreate_time().getTime())/(24*60*60*1000)<=0))) &
                                 ((ServiceTariffValueFilter==false)||(ServiceTariffValue==tae.getValue()))
 
                 ){

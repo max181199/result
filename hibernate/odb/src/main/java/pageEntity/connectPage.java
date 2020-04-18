@@ -40,7 +40,13 @@ public class connectPage {
             hbe.setClient(cle);
             if ( NewValueSet ){
                 hbe.setSumm(NewValue);
-                float count = cle.getAccount().getBalance() + NewValue;
+                float count = 0;
+                if(hbe.getService().getName().equals("BalanceUP")){
+                    count = cle.getAccount().getBalance() + NewValue;
+                }
+                else {
+                    count = cle.getAccount().getBalance() - NewValue;
+                }
                 accountEntity ace = cle.getAccount();
                 ace.setBalance(count);
                 session.merge(ace);
@@ -49,7 +55,13 @@ public class connectPage {
                 for ( tariffEntity taf : see.getTariff()){
                     if ( taf.getState()){
                         hbe.setSumm(taf.getValue());
-                        float count = cle.getAccount().getBalance() + taf.getValue();
+                        float count = 0;
+                        if(hbe.getService().getName().equals("BalanceUP")){
+                            count = cle.getAccount().getBalance() + taf.getValue();
+                        }
+                        else {
+                            count = cle.getAccount().getBalance() - taf.getValue();
+                        }
                         accountEntity ace = cle.getAccount();
                         ace.setBalance(count);
                         session.merge(ace);
