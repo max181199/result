@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/odb_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_auto_common_0_10.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0_rc6.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_0_rc6.xml" afterDir="false" />
@@ -37,13 +36,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_47_Final.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_47_Final.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_0_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_2_11_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_netty_utils_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_10_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_61.xml" afterDir="false" />
@@ -65,113 +60,40 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_4_0_0_alpha_5.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_4_0_0_alpha_5.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_4_0_0_alpha_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_8_0_beta4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_8_0_beta4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/balanceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/clientModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/connectModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/contactModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/oneClientModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/oneServiceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/serviceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/tariffModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/balanceValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/clientValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneServiceValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/serviceValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/webTest/clientExtendedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/balance.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientBase.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientExtended.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/connect.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactExtended.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientExtended.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneService.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneServiceAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/serviceExtended.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariff.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariffAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/test.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/test2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientAddValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/clientAddTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/clientExtendedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/oneClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Main/Main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Main/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Main/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Main/web/test.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/initDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/initDB.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hibernate/odb/odb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/odb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hibernate/odb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorConnectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorConnectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorTariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/connectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/connectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/day.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/day.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/findById.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/findById.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorClientPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorConnectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorTariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorTariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/Factory/creatorSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/Factory/creatorSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/accountEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/accountEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/addresEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/addresEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/clientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/clientEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/contactEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/contactEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/emailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/emailEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/historyBalanceEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/historyBalanceEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/historyServiceEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/historyServiceEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/phoneEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/phoneEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/serviceEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/serviceEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/tariffEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/ent/tariffEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/clientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/clientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/connectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/connectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/contactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/contactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/servicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/servicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/tariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/tariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_IDU_ALL.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_IDU_ALL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_day.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_findByID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorClientPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorConnectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorOneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorTariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/mx/test_generatorTariffPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/MyCtr.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/MyCtr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/oneClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/metaModel/oneClientModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/clientValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/clientValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/MyCtr.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/MyCtr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/metaModel/oneClientModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/metaModel/oneClientModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/clientValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/clientValidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneClientValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneClientValidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientExtended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientExtended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/serviceExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/serviceExtended.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/somefile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/somefile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/MyCtr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/MyCtr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/oneClientModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/oneClientModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/clientValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/clientValidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientValidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientExtended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientExtended.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/serviceExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/serviceExtended.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,26 +153,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="web: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="service: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="web: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="service_history: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -329,7 +231,7 @@
       <recent name="$PROJECT_DIR$/ODB/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.MyNew">
+  <component name="RunManager" selected="JUnit.oneClientTest">
     <configuration default="true" type="AntRunConfiguration">
       <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="usage" />
       <method v="2">
@@ -494,78 +396,79 @@
         </option>
       </method>
     </configuration>
-    <configuration name="clientExtendedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="clientAddTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webTest.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webTest" />
-      <option name="MAIN_CLASS_NAME" value="webTest.clientExtendedTest" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.clientAddTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="clientExtendedTest.SetUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="clientAddTest.clientAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webTest.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webTest" />
-      <option name="MAIN_CLASS_NAME" value="webTest.clientExtendedTest" />
-      <option name="METHOD_NAME" value="SetUp" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.clientAddTest" />
+      <option name="METHOD_NAME" value="clientAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_generatorContactPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="clientExtendedTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mx.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_generatorContactPage" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.clientExtendedTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="oneClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.oneClientTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_generatorOneClientPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="oneClientTest.oneClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mx.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_generatorOneClientPage" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_generatorOneClientPage.genTestOCLP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="odb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mx" />
-      <option name="MAIN_CLASS_NAME" value="mx.test_generatorOneClientPage" />
-      <option name="METHOD_NAME" value="genTestOCLP" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.oneClientTest" />
+      <option name="METHOD_NAME" value="oneClient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -622,19 +525,19 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
       <item itemvalue="GlassFish Server.MyNew" />
-      <item itemvalue="JUnit.test_generatorOneClientPage.genTestOCLP" />
-      <item itemvalue="JUnit.test_generatorOneClientPage" />
-      <item itemvalue="JUnit.test_generatorContactPage" />
-      <item itemvalue="JUnit.clientExtendedTest" />
-      <item itemvalue="JUnit.clientExtendedTest.SetUp" />
+      <item itemvalue="JUnit.clientExtendedTest.Test" />
+      <item itemvalue="JUnit.clientAddTest" />
+      <item itemvalue="JUnit.clientAddTest.clientAdd" />
+      <item itemvalue="JUnit.oneClientTest.oneClient" />
+      <item itemvalue="JUnit.oneClientTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.clientExtendedTest" />
-        <item itemvalue="JUnit.clientExtendedTest.SetUp" />
-        <item itemvalue="JUnit.test_generatorContactPage" />
-        <item itemvalue="JUnit.test_generatorOneClientPage" />
-        <item itemvalue="JUnit.test_generatorOneClientPage.genTestOCLP" />
+        <item itemvalue="JUnit.oneClientTest" />
+        <item itemvalue="JUnit.oneClientTest.oneClient" />
+        <item itemvalue="JUnit.clientExtendedTest.Test" />
+        <item itemvalue="JUnit.clientAddTest.clientAdd" />
+        <item itemvalue="JUnit.clientAddTest" />
       </list>
     </recent_temporary>
   </component>
@@ -715,6 +618,10 @@
       <workItem from="1587131552607" duration="2868000" />
       <workItem from="1587143064951" duration="8976000" />
       <workItem from="1587239856825" duration="2085000" />
+      <workItem from="1587243406279" duration="4681000" />
+      <workItem from="1587322934399" duration="63000" />
+      <workItem from="1587418787172" duration="5831000" />
+      <workItem from="1587482620200" duration="11112000" />
     </task>
     <servers />
   </component>
@@ -796,38 +703,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
-    <state width="958" height="197" key="GridCell.Tab.0.bottom" timestamp="1587243494818">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1587497933436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587243494818" />
-    <state width="958" height="197" key="GridCell.Tab.0.center" timestamp="1587243494817">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587497933436" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1587497933436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587243494817" />
-    <state width="958" height="197" key="GridCell.Tab.0.left" timestamp="1587243494815">
+    <state width="1398" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587497933436" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1587497933435">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587243494815" />
-    <state width="958" height="197" key="GridCell.Tab.0.right" timestamp="1587243494817">
+    <state width="1398" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587497933435" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1587497933436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587243494817" />
-    <state width="958" height="197" key="GridCell.Tab.1.bottom" timestamp="1587243494559">
+    <state width="1398" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587497933436" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1587497933437">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587243494559" />
-    <state width="958" height="197" key="GridCell.Tab.1.center" timestamp="1587243494558">
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587497933437" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1587497933436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1587243494558" />
-    <state width="958" height="197" key="GridCell.Tab.1.left" timestamp="1587243494558">
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1587497933436" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1587497933436">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1587243494558" />
-    <state width="958" height="197" key="GridCell.Tab.1.right" timestamp="1587243494559">
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1587497933436" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1587497933437">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1587243494559" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1587497933437" />
     <state width="958" height="197" key="GridCell.Tab.2.bottom" timestamp="1587243299252">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -868,10 +775,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1440.877@0.23.1440.877" timestamp="1583311920423" />
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1587243405697">
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1587482633889">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1587243405697" />
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1587482633889" />
     <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583312549771">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -892,10 +799,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.23.1440.877@0.23.1440.877" timestamp="1585073776449" />
-    <state x="97" y="70" key="new project wizard" timestamp="1583145201549">
+    <state x="97" y="70" key="new project wizard" timestamp="1587322991586">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="97" y="70" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1583145201549" />
+    <state x="97" y="70" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1587322991586" />
     <state x="385" y="211" width="670" height="675" key="run.anything.popup" timestamp="1585138782397">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

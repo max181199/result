@@ -15,15 +15,15 @@
       <Owner>max</Owner>
       <IntrospectionStateNumber>1906</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|25085|25087|1
-sequence|table|24938|24940|1
-sequence|table|24998|25000|1
-sequence|table|24968|24970|1
-sequence|table|24983|24985|1
-sequence|table|25013|25015|1
-sequence|table|25059|25061|1
+      <Relations>sequence|table|25059|25061|1
 sequence|table|25044|25046|1
+sequence|table|25085|25087|1
+sequence|table|24938|24940|1
+sequence|table|24968|24970|1
 sequence|table|25028|25030|1
+sequence|table|25013|25015|1
+sequence|table|24998|25000|1
+sequence|table|24983|24985|1
 </Relations>
     </database>
     <role id="4" parent="1" name="max">

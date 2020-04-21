@@ -14,7 +14,7 @@
 <body>
 <div style="margin-bottom: 2vh">
     <a href="/client/filter">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button style="height: 7vh;width: 10vw;margin:0;" id="backButton">
             <p style="font-size: 2vmin;"> Back </p>
         </button>
     </a>
@@ -27,7 +27,7 @@
             <tr>
                 <td>
                     <form:label path="clientName" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Name :: </form:label>
-                    <form:input path="clientName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input path="clientName" id="clientName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
@@ -35,7 +35,7 @@
             <tr>
                 <td>
                     <form:label path="max_credit_count" type="float" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Max Credit Count :: </form:label>
-                    <form:input path="max_credit_count" type="float" cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input path="max_credit_count" id="mcCount" type="float" cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
@@ -43,14 +43,14 @@
             <tr>
                 <td>
                     <form:label path="max_credit_day" type="float" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Max Credit Day :: </form:label>
-                    <form:input path="max_credit_day" type="float"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input path="max_credit_day" id="mcDay" type="float"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <input type="submit" value="Insert" style="font-size: 200px;margin-left: 1vw;" />
+                    <input type="submit" value="Insert" id="addButton" style="font-size: 200px;margin-left: 1vw;" />
                 </td>
 
             </tr>

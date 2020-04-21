@@ -75,7 +75,7 @@ INSERT INTO service_history VALUES (6,3,4,33);
 INSERT INTO service_history VALUES (7,3,5,123);
 
 INSERT INTO service_history VALUES (8,4,2,34);
-INSERT INTO service_history VALUES (9,4,4,44);
+INSERT INTO service_history VALUES (9,4,4,44,'2013-01-08 04:05:06','2017-01-08 04:05:06');
 INSERT INTO service_history VALUES (10,4,5,123);
 
 INSERT INTO service_history VALUES (11,5,2,67);

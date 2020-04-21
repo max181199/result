@@ -217,7 +217,7 @@ public class MyCtr {
     @RequestMapping( value = "/client/person/add", method = RequestMethod.POST)
     public String someName2(@ModelAttribute("o_model") @Validated oneClientModel ent, BindingResult result,ModelMap model){
 
-        oneClientValidate ocv = new oneClientValidate();
+        oneClientAddValidate ocv = new oneClientAddValidate();
         ocv.validate(ent,result);
         if (result.hasErrors()){
             List<FieldError> errorList = new ArrayList<FieldError>();
@@ -269,7 +269,7 @@ public class MyCtr {
 
         model.addAttribute("dateUp","--");
         model.addAttribute("dateDown","--");
-        return "clientExtended";
+        return "redirect:/start";
     }
 
     @RequestMapping( value = "/client/person/delete/{d_name}", method = RequestMethod.GET)
@@ -313,7 +313,7 @@ public class MyCtr {
 
         model.addAttribute("dateUp","--");
         model.addAttribute("dateDown","--");
-        return "clientExtended";
+        return "redirect:/start";
     }
 
 

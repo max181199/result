@@ -15,7 +15,7 @@
 <h3 id="text" > ${text}</h3>
     <a href="/client/filter">
         <button style="height: 7vh;width: 10vw;margin:0;">
-            <p style="margin: 0;font-size: 2vmin"> Back </p>
+            <p style="margin: 0;font-size: 2vmin" id="back"> Back </p>
         </button>
     </a>
 </body>

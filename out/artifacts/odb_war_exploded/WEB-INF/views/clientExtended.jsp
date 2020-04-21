@@ -17,16 +17,16 @@
 </head>
 <body>
 <dev style="display: flex; margin : 0; margin-bottom: 3vh;" >
-    <button style="height: 7vh;width: 10vw;margin:0;">
+    <button style="height: 7vh;width: 10vw;margin:0;" id="clientButton">
         <p style="margin: 0;font-size: 2vmin;"> Клиенты </p>
     </button>
     <a href="/service">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button style="height: 7vh;width: 10vw;margin:0;" id="serviceButton">
             <p style="margin: 0;font-size: 2vmin;"> Сервисы </p>
         </button>
     </a>
     <a href="/client/person/add">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button style="height: 7vh;width: 10vw;margin:0;" id="clientAdd">
             <p style="margin: 0;font-size: 2vmin"> Добавить клиента </p>
         </button>
     </a>
@@ -38,11 +38,11 @@
             <tr>
                 <td>
                     <form:label path="clientDebt" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Debt :: </form:label>
-                    <form:checkbox path="clientDebt" cssStyle="margin-right :  1vw;"/>
+                    <form:checkbox path="clientDebt" id="clientDebt" cssStyle="margin-right :  1vw;"/>
                 </td>
                 <td>
                     <form:label path="clientBalance" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Balance :: </form:label>
-                    <form:checkbox path="clientBalance"  cssStyle="margin-right :  1vw;"/>
+                    <form:checkbox path="clientBalance" id="clientBalance"  cssStyle="margin-right :  1vw;"/>
                 </td>
             </tr>
         </table>
@@ -50,11 +50,11 @@
             <tr>
                 <td>
                     <form:label path="clientName" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin">Name :: </form:label>
-                    <form:input path="clientName" cssStyle="font-size: 2vmin;width: 24vw;"/>
+                    <form:input path="clientName" id="clientNameInput" cssStyle="font-size: 2vmin;width: 24vw;"/>
                 </td>
                 <td>
                     <form:label path="serviceName" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin">Service :: </form:label>
-                    <form:input path="serviceName" cssStyle="font-size: 2vmin;width: 18vw;"/>
+                    <form:input path="serviceName" id="serviceNameInput" cssStyle="font-size: 2vmin;width: 18vw;"/>
                 </td>
                 <td>
 
@@ -70,24 +70,24 @@
             <tr>
                 <td>
                         <form:label path="downDay" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> День :: </form:label>
-                        <form:select path="downDay">
+                        <form:select id="downDateDay" path="downDay">
                             <form:options items="${ListDay}" cssStyle="font-size: 2vmin;" />
                         </form:select>
                 </td>
                 <td>
                     <form:label path="downMonth" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Месяц :: </form:label>
-                    <form:select path="downMonth">
+                    <form:select path="downMonth" id="downDateMonth">
                         <form:options items="${ListMonth}" cssStyle="font-size: 2vmin;" />
                     </form:select>
                 </td>
                 <td>
                     <form:label path="downYearDl" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Год :: </form:label>
-                    <form:select path="downYearDl">
+                    <form:select path="downYearDl" id="downDateYearFP">
                         <form:options items="${ListYear}" cssStyle="font-size: 2vmin;" />
                     </form:select>
                 </td>
                 <td>
-                    <form:input path="downYearFl" cssStyle="font-size: 2vmin;width: 2vw;"/>
+                    <form:input path="downYearFl" id="downDateYearSP" cssStyle="font-size: 2vmin;width: 2vw;"/>
                 </td>
             </tr>
         </table>
@@ -100,31 +100,31 @@
             <tr>
                 <td>
                     <form:label path="upDay" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> День :: </form:label>
-                    <form:select path="upDay">
+                    <form:select path="upDay" id="upDateDay">
                         <form:options items="${ListDay}" cssStyle="font-size: 2vmin;" />
                     </form:select>
                 </td>
                 <td>
                     <form:label path="upMonth" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Месяц :: </form:label>
-                    <form:select path="upMonth">
+                    <form:select path="upMonth" id="upDateMonth">
                         <form:options items="${ListMonth}" cssStyle="font-size: 2vmin;" />
                     </form:select>
                 </td>
                 <td>
                     <form:label path="upYearDl" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Год :: </form:label>
-                    <form:select path="upYearDl">
+                    <form:select path="upYearDl" id="upDateYearFP">
                         <form:options items="${ListYear}" cssStyle="font-size: 2vmin;" />
                     </form:select>
                 </td>
                 <td>
-                    <form:input path="upYearFl" cssStyle="font-size: 2vmin;width: 2vw;"/>
+                    <form:input path="upYearFl" id="upDateYearSP"  cssStyle="font-size: 2vmin;width: 2vw;"/>
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <input type="submit" value="Submit" style="font-size: 2vmin;margin-left: 1vw;" />
+                    <input type="submit" id="filterButton" value="Submit" style="font-size: 2vmin;margin-left: 1vw;" />
                 </td>
             </tr>
         </table>
@@ -185,7 +185,7 @@
         <tr>
             <th style="margin:0;width: 48vw;border: 1px solid black;background: white  ">
               <a href="<%= "/client/person/" + clp.getClientName() %>">
-                  <p style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%= clp.getClientName() %></p>
+                  <p style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;" id="<%= "clientName"%>"><%= clp.getClientName() %></p>
               </a>
             </th>
             <th style="margin:0;width: 24vw;border: 1px solid black;background: white  ">

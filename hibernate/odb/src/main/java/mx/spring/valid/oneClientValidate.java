@@ -13,7 +13,14 @@ public class oneClientValidate implements Validator {
 
     @Override
     public void validate(Object o, Errors errors) {
+
+
         oneClientModel ocm = (oneClientModel) o;
+
+        if (ocm.getClientName().equals("")){
+            errors.rejectValue("clientName","","Empty");
+        }
+
         try {
             if( !ocm.getDownYearSP().equals("--")){
                 int count = Integer.valueOf(ocm.getDownYearSP());
@@ -27,7 +34,7 @@ public class oneClientValidate implements Validator {
         }
         try {
             if( !ocm.getUpYearSP().equals("--")){
-                int count = Integer.valueOf(ocm.getDownYearSP());
+                int count = Integer.valueOf(ocm.getUpYearSP());
                 if( count > 99 || count < 0){
                     errors.rejectValue("upYearSP","","Must be int from 0 to 100");
                 }
@@ -43,9 +50,18 @@ public class oneClientValidate implements Validator {
         String yearSP =ocm.getDownYearSP();
         if ( !day.equals("--") && !month.equals("--") && !yearFP.equals("--") && !yearSP.equals("--") ){
 
-            int intDay = Integer.valueOf(day);
-            int intMonth = Integer.valueOf(month);
-            int intYear = Integer.valueOf(yearFP + yearSP);
+            int intDay = 0;
+            int intMonth = 0;
+            int intYear = 0;
+
+            try {
+               intDay = Integer.valueOf(day);
+                 intMonth = Integer.valueOf(month);
+                intYear = Integer.valueOf(yearFP + yearSP);
+            } catch (Exception e){
+                errors.rejectValue("upYearSP","","Wrong date Format");
+            }
+
             if ( (intMonth==1) && (intDay > 31)){
                 errors.rejectValue("upYearSP","","Wrong date");
             }
@@ -90,9 +106,17 @@ public class oneClientValidate implements Validator {
         yearSP= ocm.getUpYearSP();
         if ( !day.equals("--") && !month.equals("--") && !yearFP.equals("--") && !yearSP.equals("--")){
 
-            int intDay = Integer.valueOf(day);
-            int intMonth = Integer.valueOf(month);
-            int intYear = Integer.valueOf(yearFP + yearSP);
+            int intDay = 0;
+            int intMonth = 0;
+            int intYear = 0;
+
+            try {
+                intDay = Integer.valueOf(day);
+                intMonth = Integer.valueOf(month);
+                intYear = Integer.valueOf(yearFP + yearSP);
+            } catch (Exception e){
+                errors.rejectValue("upYearSP","","Wrong date Format");
+            }
             if ( (intMonth==1) && (intDay>31)){
                 errors.rejectValue("upYearSP","","Wrong date");
             }

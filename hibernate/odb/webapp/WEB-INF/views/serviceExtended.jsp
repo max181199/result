@@ -15,11 +15,11 @@
 <body>
 <dev style="display: flex; margin : 0; margin-bottom: 3vh;" >
     <a href="/client/filter">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button style="height: 7vh;width: 10vw;margin:0;" id="clientButton">
             <p style="margin: 0;font-size: 2vmin;"> Клиенты </p>
         </button>
     </a>
-    <button style="height: 7vh;width: 10vw;margin:0;">
+    <button style="height: 7vh;width: 10vw;margin:0;" id="serviceButton">
         <p style="margin: 0;font-size: 2vmin;"> Сервисы </p>
     </button>
     <a href="/service/add">
