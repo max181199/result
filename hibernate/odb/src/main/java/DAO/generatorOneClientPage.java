@@ -230,6 +230,7 @@ public class generatorOneClientPage {
             result.add(ocp);
         }
             session.getTransaction().commit();
+            session.close();
             return result;
         };
 }

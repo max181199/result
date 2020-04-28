@@ -48,6 +48,7 @@ public class generatorContactPage {
             result.add(cop);
         }
         session.getTransaction().commit();
+        session.close();
         return result;
     };
 }

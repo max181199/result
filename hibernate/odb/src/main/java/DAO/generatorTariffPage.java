@@ -40,6 +40,8 @@ public class generatorTariffPage {
             tap.setServiceKeyId(tae.getService().getId());
             result.add(tap);
         }
+        session.getTransaction().commit();
+        session.close();
         return result;
     }
 }

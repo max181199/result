@@ -190,7 +190,7 @@
             </th>
             <th style="margin:0;width: 24vw;border: 1px solid black;background: white  ">
                 <a href="<%= "/client/balance/" + clp.getClientName() %>">
-                     <p style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%=clp.getClientBalance() %></p>
+                     <p id="balance" style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%=clp.getClientBalance() %></p>
                 </a>
             </th>
             <th style="margin:0;width: 24vw;border: 1px solid black;background: white  ">

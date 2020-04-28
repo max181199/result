@@ -39,6 +39,7 @@ public class tariffPage {
         //System.out.println(taf);
         session.save(taf);
         session.getTransaction().commit();
+        session.close();
         TariffId = taf.getId();
         return this;
     }

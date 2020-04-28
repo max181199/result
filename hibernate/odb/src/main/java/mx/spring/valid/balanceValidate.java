@@ -31,9 +31,19 @@ public class balanceValidate implements Validator {
         String yearSP = bam.getBalanceYearSP();
         if ( !day.equals("--") && !month.equals("--") && !yearFP.equals("--") && !yearSP.equals("--") ){
 
-            int intDay = Integer.valueOf(day);
-            int intMonth = Integer.valueOf(month);
-            int intYear = Integer.valueOf(yearFP + yearSP);
+            int intDay =0;
+            int intMonth = 0;
+            int intYear = 0;
+            try {
+                 intDay = Integer.valueOf(day);
+                 intMonth = Integer.valueOf(month);
+                 intYear = Integer.valueOf(yearFP + yearSP);
+            }
+            catch ( Exception e) {
+                errors.rejectValue("balanceYearSP","","Bad Date Format");
+            }
+
+
             if ( (intMonth==1) && (intDay > 31)){
                 errors.rejectValue("balanceYearSP","","Wrong date");
             }

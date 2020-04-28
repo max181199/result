@@ -72,7 +72,6 @@ public class connectPage {
             hbe.setOp_time(timestamp);
             session.save(hbe);
             session.getTransaction().commit();
-            session.close();
         }
         else {
             historyServiceEntity hse = new historyServiceEntity();
@@ -93,8 +92,9 @@ public class connectPage {
             }
             session.save(hse);
             session.getTransaction().commit();
-            session.close();
+
         }
+        session.close();
         return this;
     }
 

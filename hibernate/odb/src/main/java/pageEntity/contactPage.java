@@ -41,6 +41,7 @@ public class contactPage {
             session.update(coe);
         }
         session.getTransaction().commit();
+        session.close();
         return this;
     }
 
@@ -53,6 +54,7 @@ public class contactPage {
         coe.setClient(dao.findClientById(ClientKeyID));
         session.save(coe);
         session.getTransaction().commit();
+        session.close();
         SecretContactKey = coe.getId();
         return this;
     }
@@ -85,6 +87,7 @@ public class contactPage {
                 session.delete(coe);
         }
         session.getTransaction().commit();
+        session.close();
         return;
     }
 
@@ -97,6 +100,7 @@ public class contactPage {
         phe.setContact(dao.findContactById(SecretContactKey));
         session.save(phe);
         session.getTransaction().commit();
+        session.close();
         ContactPhone.add(phe);
         return this;
     }
@@ -110,6 +114,7 @@ public class contactPage {
         phe.setContact(dao.findContactById(SecretContactKey));
         session.save(phe);
         session.getTransaction().commit();
+        session.close();
         ContactEmail.add(phe);
         return this;
     }
@@ -123,6 +128,7 @@ public class contactPage {
         phe.setContact(dao.findContactById(SecretContactKey));
         session.save(phe);
         session.getTransaction().commit();
+        session.close();
         ContactAddress.add(phe);
         return this;
     }
@@ -139,13 +145,16 @@ public class contactPage {
                 ContactPhone.remove(phe);
                 session.delete(phe);
                 session.getTransaction().commit();
+
             }
         }
+        session.close();
         return this;
     }
 
     public contactPage DeleteEmail( String DeleteEmailPr){
         Session session = creatorSession.getSessionFactory().openSession();
+        //AddAddress(DeleteEmailPr);
         List<emailEntity> tmp = new ArrayList<emailEntity>();
         for ( emailEntity phe : ContactEmail){
             tmp.add(phe);
@@ -154,10 +163,13 @@ public class contactPage {
             if( phe.getEmail().equals(DeleteEmailPr)){
                 session.beginTransaction();
                 ContactEmail.remove(phe);
+
                 session.delete(phe);
                 session.getTransaction().commit();
+
             }
         }
+        session.close();
         return this;
     }
 
@@ -173,8 +185,10 @@ public class contactPage {
                 ContactAddress.remove(phe);
                 session.delete(phe);
                 session.getTransaction().commit();
+
             }
         }
+        session.close();
         return this;
     }
 

@@ -344,11 +344,16 @@ public class MyCtr {
         for ( oneClientPage et : tr){
             ocp = et;
         }
-        if ( !ocp.getName().equals(ent.getClientName())){ flag=true; }
-        ocp.setName(ent.getClientName());
-        ocp.setMax_credit(ent.getMax_credit_count());
-        ocp.setMax_credit_day(ent.getMax_credit_day());
-        ocp.UPDATE();
+        try{
+            if ( !ocp.getName().equals(ent.getClientName())){ flag=true; }
+            ocp.setName(ent.getClientName());
+            ocp.setMax_credit(ent.getMax_credit_count());
+            ocp.setMax_credit_day(ent.getMax_credit_day());
+            ocp.UPDATE();
+        } catch (Exception e) {
+            return "redirect:/error/" + "Name Already Use";
+        }
+
 
         List<String> AllDay = new ArrayList<String>();
         for ( int i=1;i <= 31; i++ ){
@@ -408,7 +413,22 @@ public class MyCtr {
     }
 
     @RequestMapping(value = "/contact/add/{newContact}",method = RequestMethod.POST)
-    public String SomeName9(@PathVariable("newContact") String backPath,@ModelAttribute("c_model") contactModel ent, BindingResult result, ModelMap model){
+    public String SomeName9(@PathVariable("newContact") String backPath,@ModelAttribute("c_model") @Validated contactModel ent, BindingResult result, ModelMap model){
+
+        contactAddValidate com = new contactAddValidate();
+         com.validate(ent,result);
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
+
+
         contactPage cop = new contactPage();
         cop.setContactName(ent.getContactName());
         generatorOneClientPage helgen = new generatorOneClientPage();
@@ -449,7 +469,7 @@ public class MyCtr {
         return "contactAdd";
     }
 
-    @RequestMapping(value = "/contact/phoneDelete/{name}/{value}",method = RequestMethod.GET)
+    @RequestMapping(value = "/contact/phoneDelete/{name}/{value:.+}",method = RequestMethod.GET)
     public String SomeName6(@PathVariable("name") String name, @PathVariable("value") String vc, ModelMap model){
         contactModel com = new contactModel();
         com.setContactName(name);
@@ -468,7 +488,7 @@ public class MyCtr {
         return "contactExtended";
     }
 
-    @RequestMapping(value = "/contact/emailDelete/{name}/{value}",method = RequestMethod.GET)
+    @RequestMapping(value = "/contact/emailDelete/{name}/{value:.+}",method = RequestMethod.GET)
     public String SomeName7(@PathVariable("name") String name, @PathVariable("value") String vc, ModelMap model){
         contactModel com = new contactModel();
         com.setContactName(name);
@@ -487,7 +507,7 @@ public class MyCtr {
         return "contactExtended";
     }
 
-    @RequestMapping(value = "/contact/addressDelete/{name}/{value}",method = RequestMethod.GET)
+    @RequestMapping(value = "/contact/addressDelete/{name}/{value:.+}",method = RequestMethod.GET)
     public String SomeName8(@PathVariable("name") String name, @PathVariable("value") String vc, ModelMap model){
         contactModel com = new contactModel();
         com.setContactName(name);
@@ -506,7 +526,7 @@ public class MyCtr {
         return "contactExtended";
     }
 
-    @RequestMapping(value = "/contact/delete/{p_name}",method = RequestMethod.GET)
+    @RequestMapping(value = "/contact/delete/{p_name:.+}",method = RequestMethod.GET)
     public String SomeName10(@PathVariable("p_name") String p_name,ModelMap model ){
 
         generatorContactPage gen3 = new generatorContactPage();
@@ -523,26 +543,46 @@ public class MyCtr {
 
     @RequestMapping(value = "/contact/{p_name}", method = RequestMethod.POST)
     public String SomeName5(@PathVariable("p_name") String p_name,@ModelAttribute("c_model") contactModel ent, BindingResult result,ModelMap model){
+
+
+        contactAddValidate com = new contactAddValidate();
+        com.validate(ent,result);
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
+
         generatorContactPage gen = new generatorContactPage();
         gen.setContactName(p_name);
         boolean flag = false;
 
-        for ( contactPage cp : gen.getPageContact()){
-            if (!ent.getAddAdress().equals("")){
-                cp.AddAddress(ent.getAddAdress());
+        try {
+            for ( contactPage cp : gen.getPageContact()){
+                if (!ent.getAddAdress().equals("")){
+                    cp.AddAddress(ent.getAddAdress());
+                }
+                if (!ent.getAddEmail().equals("")){
+                    cp.AddEmail(ent.getAddEmail());
+                }
+                if (!ent.getAddPhone().equals("")){
+                    cp.AddPhone(ent.getAddPhone());
+                }
+                if ( !cp.getContactName().equals(ent.getContactName())){
+                    flag=true;
+                }
+                cp.setContactName(ent.getContactName());
+                cp.UPDATE();
             }
-            if (!ent.getAddEmail().equals("")){
-                cp.AddEmail(ent.getAddEmail());
-            }
-            if (!ent.getAddPhone().equals("")){
-                cp.AddPhone(ent.getAddPhone());
-            }
-            if ( !cp.getContactName().equals(ent.getContactName())){
-                flag=true;
-            }
-            cp.setContactName(ent.getContactName());
-            cp.UPDATE();
+        } catch (Exception e){
+            return "redirect:/error/" + e.getMessage();
         }
+
         ent.setAddPhone("");
         ent.setAddEmail("");
         ent.setAddAdress("");
@@ -744,12 +784,29 @@ public class MyCtr {
     @RequestMapping(value = "/service/add",method = RequestMethod.POST)
     public String newSomeName7(@ModelAttribute("os_model") oneServiceModel ent, BindingResult result,ModelMap model){
 
-        oneServicePage osp = new oneServicePage();
-        osp.setType(ent.getServiceType());
-        osp.setDescribe(ent.getServiceDescribe());
-        osp.setName(ent.getServiceName());
-        osp.setActual(ent.isServiceState());
-        osp.INSERT();
+        oneServiceValidate sev = new oneServiceValidate();
+        sev.validate(ent,result);
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
+        try {
+            oneServicePage osp = new oneServicePage();
+            osp.setType(ent.getServiceType());
+            osp.setDescribe(ent.getServiceDescribe());
+            osp.setName(ent.getServiceName());
+            osp.setActual(ent.isServiceState());
+            osp.INSERT();
+        } catch (Exception e ) {
+            return "redirect:/error/" + e;
+        }
+
 
         return "redirect:/service";
     }
@@ -784,6 +841,17 @@ public class MyCtr {
 
     @RequestMapping(value = "/service/tariff/{id}", method = RequestMethod.POST)
     public String newSomeName56( @PathVariable("id") int id,@ModelAttribute("f_model") tariffModel ent, BindingResult result,ModelMap model){
+
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
         tariffPage tp = new tariffPage();
         String bacck = "null";
         findById dao = new findById();
@@ -815,6 +883,18 @@ public class MyCtr {
 
     @RequestMapping(value = "/service/tariff/add/{serviceName}", method = RequestMethod.POST)
     public String newSomeName56( @PathVariable("serviceName") String serviceName,@ModelAttribute("f_model") tariffModel ent, BindingResult result,ModelMap model){
+
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
+
         tariffPage tp = new tariffPage();
         generatorOneServicePage gen = new generatorOneServicePage();
         gen.setServiceName(serviceName);
@@ -933,6 +1013,17 @@ public class MyCtr {
     @RequestMapping( value = "/connect/add/{clientId}/{serviceId}", method = RequestMethod.POST)
     public String evil2( @PathVariable("clientId") int clientId,@PathVariable("serviceId") int serviceId,
                          @ModelAttribute("c_model") connectModel ent, BindingResult result, ModelMap model ){
+
+        if (result.hasErrors()){
+            List<FieldError> errorList = new ArrayList<FieldError>();
+            String mistake = "NONE";
+            errorList = result.getFieldErrors();
+            for(FieldError fer : errorList){
+                mistake = (String) fer.getDefaultMessage();
+            }
+            return "redirect:/error/" + mistake;
+        }
+
         generatorConnectPage gen = new generatorConnectPage();
         gen.setClinetBacklID(clientId);
         for(connectPage cop : gen.getPageConnect()){

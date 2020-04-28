@@ -18,7 +18,7 @@
 <div style="border: 1px solid black; width: 45vw ; margin-bottom: 0;margin-top: 0">
     <div style="margin-bottom: 2vh;margin-right: 0; margin-top: 2vh;margin-left: 2vw">
         <a href="/service" style="width: 4vw;margin: 0;">
-            <button style="height: 7vh;width: 10vw;margin:0;">
+            <button id="back" style="height: 7vh;width: 10vw;margin:0;">
                 <p style="margin: 0;font-size: 2vmin;" > Back </p>
             </button>
         </a>
@@ -30,7 +30,7 @@
                 <tr>
                     <td>
                         <form:label path="serviceName" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Name :: </form:label>
-                        <form:input path="serviceName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                        <form:input id="name" path="serviceName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                     </td>
                 </tr>
             </table>
@@ -38,7 +38,7 @@
                 <tr>
                     <td>
                         <form:label path="serviceType"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Type :: </form:label>
-                        <form:input path="serviceType"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                        <form:input id="type" path="serviceType"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                     </td>
                 </tr>
             </table>
@@ -46,7 +46,7 @@
                 <tr>
                     <td>
                         <form:label path="serviceState"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">State :: </form:label>
-                        <form:checkbox path="serviceState"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                        <form:checkbox id="state" path="serviceState"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                     </td>
                 </tr>
             </table>
@@ -54,14 +54,14 @@
                 <tr>
                     <td>
                         <form:label path="serviceDescribe"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Describe :: </form:label>
-                        <form:textarea path="serviceDescribe"  cssStyle="margin-right :  1vw; margin-left:1vw; max-width: 42vw; max-height: 58vh;margin-top: 2vh;font-size: 2vmin; width: 42vw;height: 58vh"/>
+                        <form:textarea id="describe" path="serviceDescribe"  cssStyle="margin-right :  1vw; margin-left:1vw; max-width: 42vw; max-height: 58vh;margin-top: 2vh;font-size: 2vmin; width: 42vw;height: 58vh"/>
                     </td>
                 </tr>
             </table>
             <table>
                 <tr>
                     <td>
-                        <input type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                        <input id="add" type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                     </td>
                 </tr>
             </table>

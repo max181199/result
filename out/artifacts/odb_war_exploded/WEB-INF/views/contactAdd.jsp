@@ -14,7 +14,7 @@
 <body>
 <div style="margin-bottom: 2vh;margin-top: 0">
     <a href="<%= "/client/person/" + request.getAttribute("backKey") %>">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button id="back" style="height: 7vh;width: 10vw;margin:0;">
             <p style="margin: 0;font-size: 2vmin;"> Back </p>
         </button>
     </a>
@@ -26,28 +26,28 @@
             <tr>
                 <td>
                     <form:label path="contactName" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh"> ContactName :: </form:label>
-                    <form:input path="contactName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input id="name" path="contactName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
 
             </tr>
             <tr>
                 <td>
                     <form:label path="addAdress" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh"> Base Address :: </form:label>
-                    <form:input path="addAdress"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input id="address" path="addAdress"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
 
             </tr>
             <tr>
                 <td>
                     <form:label path="addPhone" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh"> Base Phone Number :: </form:label>
-                    <form:input path="addPhone"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input  id="phone" path="addPhone"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
 
             </tr>
             <tr>
                 <td>
                     <form:label path="addEmail" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh"> Base Email :: </form:label>
-                    <form:input path="addEmail"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input id="email" path="addEmail"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
 
             </tr>
@@ -55,7 +55,7 @@
         <table>
             <tr>
                 <td>
-                    <input type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                    <input type="submit" id="add" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                 </td>
             </tr>
         </table>

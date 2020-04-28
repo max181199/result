@@ -46,12 +46,12 @@
                 </button>
             </a>
             <a href="<%= "/contact/add/" + ocp.getName()%>" style="width: 4vw;margin: 0;">
-                <button style="height: 7vh;width: 10vw;margin-left: 0vw;margin-right: 0vw">
+                <button id="addContact" style="height: 7vh;width: 10vw;margin-left: 0vw;margin-right: 0vw">
                     <p style="margin: 0;font-size: 2vmin;" > AddContact </p>
                 </button>
             </a>
              <a href="<%= "/connect/" + ocp.getSecretClientId()%>">
-                 <button style="height: 7vh;width: 10vw;margin-left: 0vw;margin-right: 0vw">
+                 <button id="connect" style="height: 7vh;width: 10vw;margin-left: 0vw;margin-right: 0vw">
                      <p style="margin: 0;font-size: 2vmin;" > Config service </p>
                  </button>
              </a>

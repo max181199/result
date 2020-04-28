@@ -50,6 +50,8 @@ INSERT INTO email VALUES (8,8,'sor_vo_@mail.ru');
 INSERT INTO tariff VALUES (1,1,0,true,true,100);
 INSERT INTO tariff VALUES (2,2,200,true,true,200);
 INSERT INTO tariff VALUES (3,2,300,false,true,300,'1999-01-08 04:05:06');
+INSERT INTO tariff VALUES (8,2,100,false,false,500,'2000-01-08 04:05:06');
+INSERT INTO tariff VALUES (9,2,200,false,false,900,'2001-01-08 04:05:06');
 INSERT INTO tariff VALUES (4,3,200,true,false,123,'1999-01-08 04:05:06');
 INSERT INTO tariff VALUES (5,4,300,true,false,100);
 INSERT INTO tariff VALUES (6,5,400,true,true,2);

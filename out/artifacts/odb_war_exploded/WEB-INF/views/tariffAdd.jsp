@@ -14,7 +14,7 @@
 <body>
 <div style="margin-bottom: 2vh">
     <a href="<%= "/service/" + request.getAttribute("absName")%>">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button  id="back" style="height: 7vh;width: 10vw;margin:0;">
             <p style="font-size: 2vmin;"> Back </p>
         </button>
     </a>
@@ -26,7 +26,7 @@
             <tr>
                 <td>
                     <form:label path="tariffCost" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Cost :: </form:label>
-                    <form:input path="tariffCost"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input id="cost" path="tariffCost" type="float"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
@@ -34,22 +34,22 @@
             <tr>
                 <td>
                     <form:label path="tariffValue" type="float" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Value :: </form:label>
-                    <form:input path="tariffValue" type="float" cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:input id="value" path="tariffValue" type="float" cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <form:label path="tariffDaypaymode" type="float" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Max Credit Day :: </form:label>
-                    <form:checkbox path="tariffDaypaymode"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                    <form:label path="tariffDaypaymode" type="float" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">DayPayMode :: </form:label>
+                    <form:checkbox id="dpmode" path="tariffDaypaymode"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <input type="submit" value="Add" style="font-size: 200px;margin-left: 1vw;" />
+                    <input id="add" type="submit" value="Add" style="font-size: 200px;margin-left: 1vw;" />
                 </td>
             </tr>
         </table>

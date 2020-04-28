@@ -67,6 +67,27 @@ public class oneClientTest extends base {
                 break;
             }
         }
+
+        driver.findElement(By.id("clientName")).clear();
+        driver.findElement(By.id("clientName")).sendKeys("Mazie Burn");
+        driver.findElement(By.id("update")).click();
+        if(!driver.getTitle().equals("ERROR")){
+            System.out.println(driver.getTitle());
+            Assert.fail();
+        }
+        driver.findElement(By.id("back")).click();
+
+        tmp = driver.findElements(By.id("clientName"));
+        for ( WebElement ent : tmp){
+            //System.out.println(ent.getText());
+            if (ent.getText().equals("Milton Bostock")){
+                ent.click();
+                break;
+            }
+        }
+
+
+
         driver.findElement(By.id("clientName")).clear();
         driver.findElement(By.id("clientName")).sendKeys("NewName");
         driver.findElement(By.id("update")).click();
@@ -254,7 +275,7 @@ public class oneClientTest extends base {
             }
         }
 
-                         tmp = new ArrayList<WebElement>();
+        tmp = new ArrayList<WebElement>();
         List<WebElement> tmp2 = new ArrayList<WebElement>();
         List<WebElement> tmp3 = new ArrayList<WebElement>();
         List<WebElement> tmp4 = new ArrayList<WebElement>();
@@ -853,6 +874,7 @@ public class oneClientTest extends base {
         driver.findElement(By.id("upDateYearSP")).clear();
         driver.findElement(By.id("upDateYearSP")).sendKeys("--");
         driver.findElement(By.id("filter")).click();
+
 
     }
 }

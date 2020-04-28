@@ -113,6 +113,7 @@ public class generatorServicePage {
             }
         }
         session.getTransaction().commit();
+        session.close();
         return result;
     }
 

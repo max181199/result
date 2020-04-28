@@ -64,6 +64,8 @@ public class generatorConnectPage {
             cop.setAddServiceList(tmpSE2);
             result.add(cop);
         }
+        session.getTransaction().commit();
+        session.close();
         return result;
     }
 

@@ -169,6 +169,8 @@ public class generatorOneServicePage {
             osp.setTariff(tmpT);
             result.add(osp);
         }
+        session.getTransaction().commit();
+        session.close();
         return result;
     };
 }

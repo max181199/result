@@ -15,15 +15,15 @@
 <body>
 <dev style="display: flex; margin : 0; margin-bottom: 3vh;" >
     <a href="/client/filter">
-        <button style="height: 7vh;width: 10vw;margin:0;" id="clientButton">
-            <p style="margin: 0;font-size: 2vmin;"> Клиенты </p>
+        <button id="clientButton" style="height: 7vh;width: 10vw;margin:0;" id="clientButton">
+            <p  style="margin: 0;font-size: 2vmin;"> Клиенты </p>
         </button>
     </a>
     <button style="height: 7vh;width: 10vw;margin:0;" id="serviceButton">
         <p style="margin: 0;font-size: 2vmin;"> Сервисы </p>
     </button>
     <a href="/service/add">
-        <button style="height: 7vh;width: 10vw;margin:0;">
+        <button  id="add"  style="height: 7vh;width: 10vw;margin:0;">
             <p style="margin: 0;font-size: 2vmin;"> Добавить услугу </p>
         </button>
     </a>
@@ -35,7 +35,7 @@
             <tr>
                 <td>
                     <form:label path="actual" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">State :: </form:label>
-                    <form:checkbox path="actual" cssStyle="margin-right :  1vw;"/>
+                    <form:checkbox id="state" path="actual" cssStyle="margin-right :  1vw;"/>
                 </td>
             </tr>
         </table>
@@ -43,21 +43,21 @@
             <tr>
                 <td>
                     <form:label path="name" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin">Service Name :: </form:label>
-                    <form:input path="name" cssStyle="font-size: 2vmin;width: 24vw;"/>
+                    <form:input id="name" path="name" cssStyle="font-size: 2vmin;width: 24vw;"/>
                 </td>
                 <td>
                     <form:label path="type" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin">Type :: </form:label>
-                    <form:input path="type" cssStyle="font-size: 2vmin;width: 18vw;"/>
+                    <form:input id="type" path="type" cssStyle="font-size: 2vmin;width: 18vw;"/>
                 </td>
                 <td>
                     <form:label path="taf" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin">Id Tarrif :: </form:label>
-                    <form:input path="taf" type="Integer" cssStyle="font-size: 2vmin;width: 18vw;"/>
+                    <form:input id="tariff" path="taf" type="Integer" cssStyle="font-size: 2vmin;width: 18vw;"/>
                 </td>
             </tr>
         <table>
             <tr>
                 <td>
-                    <input type="submit" value="Submit" style="font-size: 2vmin;margin-left: 1vw;" />
+                    <input  id="filter" type="submit" value="Submit" style="font-size: 2vmin;margin-left: 1vw;" />
                 </td>
             </tr>
         </table>
@@ -99,7 +99,7 @@
         <tr>
             <th style="margin:0;width: 38vw;border: 1px solid black;background: white  ">
                 <a href="<%= "/service/" + sep.getServiceName() %>">
-                    <p style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%= sep.getServiceName() %></p>
+                    <p id="serviceName" style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%= sep.getServiceName() %></p>
                 </a>
             <th style="margin:0;width: 24vw;border: 1px solid black;background: white  ">
                     <p style="margin-left : 0;margin-right: 0; margin-top:0.4vh;margin-bottom:0.4vh;font-size:2vmin;"><%=sep.getServiceType() %></p>

@@ -145,6 +145,7 @@ public class generatorClientPages {
 
         }
         session.getTransaction().commit();
+        session.close();
         return result;
     }
 

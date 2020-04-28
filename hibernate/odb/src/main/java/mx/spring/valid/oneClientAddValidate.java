@@ -14,6 +14,7 @@ public class oneClientAddValidate implements Validator {
     @Override
     public void validate(Object o, Errors errors) {
         oneClientModel ocm = (oneClientModel) o;
+
         if( ocm.getClientName().equals("")){
             errors.rejectValue("clientName","","Empty Name");
         }

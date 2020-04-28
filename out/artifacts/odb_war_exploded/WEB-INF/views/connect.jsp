@@ -32,15 +32,15 @@
                 <%
                     for (serviceEntity see : cop.getAddServiceList()){%>
                     <a href="<%= "/service/" + see.getName()%>">
-                        <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
+                        <p id="name" style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
                     </a>
-                    <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
+                    <p  id="type" style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
                     <% for(historyServiceEntity hse : see.getHistoryService()){
                         if ( (hse.getEnd_time() == null) && (hse.getClient().getId() == (Integer) request.getAttribute("clientId")) ){
                     %>
-                        <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceValue :: <%=hse.getState()%> </p>
+                        <p id="value" style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceValue :: <%=hse.getState()%> </p>
                         <a href="<%="/connect/delete/" + request.getAttribute("clientId") + "/" + hse.getId()%>">
-                            <button style="margin-top: 0.2vh;margin-bottom: 0.2vh;margin-left: 1vw;height: 3vmin;width: 5vw ">
+                            <button id="cancel" style="margin-top: 0.2vh;margin-bottom: 0.2vh;margin-left: 1vw;height: 3vmin;width: 5vw ">
                                 <p style="font-size: 2vmin;margin: 0"> Cancel </p>
                             </button>
                         </a>
@@ -49,7 +49,7 @@
         </div>
         <div>
             <a href="<%= "/client/person/" + dao.findClientById((Integer) request.getAttribute("clientId")).getName() %>">
-                <button style="height: 6vh;width: 10vw;margin:0;">
+                <button id="back" style="height: 6vh;width: 10vw;margin:0;">
                     <p style="margin: 0;font-size: 2vmin;" > Back </p>
                 </button>
             </a>
@@ -67,19 +67,19 @@
                 <div style="display: flex">
                     <div>
                         <a href="<%= "/service/" + see.getName()%>">
-                            <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
+                            <p id="balanceName" style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
                         </a>
-                        <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
+                        <p id="balanceType"  style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
                     </div>
                     <form:form cssStyle="margin-top: 2vh" method="POST" modelAttribute="c_model" action="<%="/connect/add/" + request.getAttribute("clientId") + "/" + see.getId()%>">
                         <table>
                             <tr>
                                 <td>
                                     <form:label path="customValue" cssStyle="margin-left: 2vw;font-size: 2vmin;margin-top: 4vh;margin-bottom: 0">Value :: </form:label>
-                                    <form:input path="customValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw;margin-bottom: 0"/>
+                                    <form:input id="balanceValue" path="customValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw;margin-bottom: 0"/>
                                 </td>
                                 <td>
-                                    <input type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                                    <input id="balanceAdd" type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                                 </td>
                             </tr>
                         </table>
@@ -96,19 +96,19 @@
                 <div style="display: flex">
                     <div>
                         <a href="<%= "/service/" + see.getName()%>">
-                            <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
+                            <p id="serviceName" style="margin-left: 1vw;margin-right: 1vw;margin-top: 2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceName :: <%=see.getName()%> </p>
                         </a>
-                        <p style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
+                        <p id="serviceType" style="margin-left: 1vw;margin-right: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"  > ServiceType :: <%=see.getType()%> </p>
                     </div>
                     <form:form cssStyle="margin-top: 2vh" method="POST" modelAttribute="c_model" action="<%="/connect/add/" + request.getAttribute("clientId") + "/" + see.getId()%>">
                         <table>
                             <tr>
                                 <td>
                                     <form:label path="customValue" cssStyle="margin-left: 2vw;font-size: 2vmin;margin-top: 4vh;margin-bottom: 0">Value :: </form:label>
-                                    <form:input path="customValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw;margin-bottom: 0"/>
+                                    <form:input id="serviceValue" path="customValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw;margin-bottom: 0"/>
                                 </td>
                                 <td>
-                                    <input type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                                    <input id="serviceAdd" type="submit" value="Add" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                                 </td>
                             </tr>
                         </table>

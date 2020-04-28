@@ -38,6 +38,7 @@ public class oneClientPage {
             session.update(ent);
         }
         session.getTransaction().commit();
+        session.close();
         return this;
     }
 
@@ -107,6 +108,7 @@ public class oneClientPage {
             session.delete(ent);
         }
         session.getTransaction().commit();
+        session.close();
         return;
     }
 

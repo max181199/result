@@ -13,6 +13,16 @@ public class oneServiceValidate implements Validator {
     @Override
     public void validate(Object o, Errors errors) {
         oneServiceModel osm = (oneServiceModel) o;
+
+        if(osm.getServiceName().equals("")){
+            errors.rejectValue("tariffDataDay","","Empty service Name");
+        }
+
+        if(osm.getServiceType().equals("")){
+            errors.rejectValue("tariffDataDay","","Empty service Type");
+        }
+
+
         try {
             if( !osm.getTariffDataYearSP().equals("--")){
                 int count = Integer.valueOf(osm.getTariffDataYearSP());
@@ -22,7 +32,7 @@ public class oneServiceValidate implements Validator {
             }
         }
         catch ( Exception e){
-            errors.rejectValue("downYearFl","","Must be int from 0 to 100");
+            errors.rejectValue("tariffDataDay","","Must be int from 0 to 100");
         }
 
 
@@ -32,9 +42,19 @@ public class oneServiceValidate implements Validator {
         String yearSP = osm.getTariffDataYearSP();
         if ( !day.equals("--") && !month.equals("--") && !yearFP.equals("--")  && !yearSP.equals("--")){
 
-            int intDay = Integer.valueOf(day);
-            int intMonth = Integer.valueOf(month);
-            int intYear = Integer.valueOf(yearFP + yearSP);
+            int intDay = 0;
+            int intMonth = 0;
+            int intYear =    0;
+
+            try{
+                 intDay = Integer.valueOf(day);
+                 intMonth = Integer.valueOf(month);
+                 intYear = Integer.valueOf(yearFP + yearSP);
+            } catch ( Exception e) {
+                errors.rejectValue("tariffDataDay","","Bad Date Fromat");
+            }
+
+
             if ( (intMonth==1) && (intDay > 31)){
                 errors.rejectValue("tariffDataDay","","Wrong date");
             }

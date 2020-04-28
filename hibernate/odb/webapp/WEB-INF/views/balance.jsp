@@ -23,7 +23,7 @@
     </div>
     <div style="margin-top: 0vh;width: 52vw; border: 1px solid black;margin-left: 1vw ">
         <a href="/client/filter" style="width: 4vw;margin: 0;">
-            <button style="height: 7vh;width: 10vw;margin:0;">
+            <button id="back" style="height: 7vh;width: 10vw;margin:0;">
                 <p style="margin: 0;font-size: 2vmin;" > Back </p>
             </button>
         </a>
@@ -33,11 +33,11 @@
                 <tr>
                     <td>
                         <form:label path="balanceName" cssStyle="margin-left: 1vw;font-size: 2vmin;margin-top: 2vh">Balance Name :: </form:label>
-                        <form:input path="balanceName"  cssStyle="margin-right :  1vw;font-size: 2vmin;margin-top: 2vh"/>
+                        <form:input id="name" path="balanceName"  cssStyle="margin-right :  1vw;font-size: 2vmin;margin-top: 2vh"/>
                     </td>
                     <td>
                         <form:label path="balanceCount" cssStyle="margin-left: 1vw;font-size: 2vmin;margin-top: 2vh">Balance Count :: </form:label>
-                        <form:input path="balanceCount"  cssStyle="margin-right :  1vw;font-size: 2vmin; width: 5vw;margin-top: 2vh"/>
+                        <form:input id="count" type="float" path="balanceCount"  cssStyle="margin-right :  1vw;font-size: 2vmin; width: 5vw;margin-top: 2vh"/>
                     </td>
                 </tr>
             </table>
@@ -48,31 +48,31 @@
                 <tr>
                     <td>
                         <form:label path="balanceDay" cssStyle="margin-top: 1vh;margin-bottom: 1vh;margin-left: 1vw; font-size: 2vmin"> День :: </form:label>
-                        <form:select path="balanceDay">
+                        <form:select id="balanceDay" path="balanceDay">
                             <form:options items="${ListDay}" cssStyle="font-size: 2vmin;" />
                         </form:select>
                     </td>
                     <td>
                         <form:label path="balanceMonth" cssStyle="margin-top: 1vh;margin-bottom: 1vh;margin-left: 1vw; font-size: 2vmin"> Месяц :: </form:label>
-                        <form:select path="balanceMonth">
+                        <form:select id="balanceMonth" path="balanceMonth">
                             <form:options items="${ListMonth}" cssStyle="font-size: 2vmin;" />
                         </form:select>
                     </td>
                     <td>
                         <form:label path="balanceYearFP" cssStyle="margin-top: 1vh;margin-bottom: 1vh;margin-left: 1vw; font-size: 2vmin"> Год :: </form:label>
-                        <form:select path="balanceYearFP">
+                        <form:select id="balanceYearFP" path="balanceYearFP">
                             <form:options items="${ListYear}" cssStyle="font-size: 2vmin;" />
                         </form:select>
                     </td>
                     <td>
-                        <form:input path="balanceYearSP" cssStyle="font-size: 2vmin;width: 2vw;"/>
+                        <form:input id="balanceYearSP" path="balanceYearSP" cssStyle="font-size: 2vmin;width: 2vw;"/>
                     </td>
                 </tr>
             </table>
             <table>
                 <tr>
                     <td>
-                        <input type="submit" value="Filter" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                        <input type="submit" id="filter" value="Filter" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                     </td>
                 </tr>
             </table>
@@ -112,10 +112,10 @@
             for (oneClientPage ocp : gen.getPageOneClient()){
                 for (historyBalanceEntity hbe : ocp.getBalanceHistory()){ %>
             <a href="<%= "/service/" + hbe.getService().getName()%>">
-                <p style="margin-left: 1vw;margin-top: 1vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceName :: <%=hbe.getService().getName()%> </p>
+                <p  id="balanceName"  style="margin-left: 1vw;margin-top: 1vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceName :: <%=hbe.getService().getName()%> </p>
             </a>
-            <p style="margin-left: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceCount :: <%=hbe.getSumm()%> </p>
-            <p style="margin-left: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceTimeTransaction :: <%=hbe.getOp_time()%> </p>
+            <p id="balanceCount" style="margin-left: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceCount :: <%=hbe.getSumm()%> </p>
+            <p id="balanceTime" style="margin-left: 1vw;margin-top: 0.2vh;margin-bottom: 0.2vh;font-size: 2vmin"> BalanceTimeTransaction :: <%=hbe.getOp_time()%> </p>
          <%} }%>
     </div>
 

@@ -44,11 +44,11 @@
 	</target>
 
 	<target name="testHibernate" description="test odb">
-		<ant antfile="gen_web_test.xml" target="odb.junit" />
+		<ant antfile="ant_build_file.xml" target="odb.junit" />
 	</target>
 
 	<target name="compile" description="compile module  odb">
-		<ant antfile="gen_web_test.xml" target="all" />
+		<ant antfile="ant_build_file.xml" target="all" />
 	</target>
 
 	<target name="testHB" depends="deleteDB,setupDB,compile,testHibernate"></target>

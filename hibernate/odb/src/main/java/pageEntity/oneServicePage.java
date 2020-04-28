@@ -27,6 +27,7 @@ public class oneServicePage {
         createService.setType(Type);
         session.save(createService);
         session.getTransaction().commit();
+        session.close();
         SecretKey = createService.getId();
         return this;
     }
@@ -47,6 +48,7 @@ public class oneServicePage {
             session.update(ent);
         }
         session.getTransaction().commit();
+        session.close();
         return this;
     }
 
@@ -78,6 +80,7 @@ public class oneServicePage {
             session.delete(see);
         }
         session.getTransaction().commit();
+        session.close();
         return;
     }
 
@@ -95,6 +98,7 @@ public class oneServicePage {
                 session.getTransaction().commit();
             }
         }
+        session.close();
         return this;
     }
 

@@ -28,17 +28,17 @@
         <div style="border: 1px solid black; width: 45vw ; margin-bottom: 0;margin-top: 0">
             <div style="margin-bottom: 2vh;margin-right: 0; margin-top: 2vh;margin-left: 2vw">
                 <a href="/service" style="width: 4vw;margin: 0;">
-                    <button style="height: 7vh;width: 10vw;margin:0;">
+                    <button id="back" style="height: 7vh;width: 10vw;margin:0;">
                         <p style="margin: 0;font-size: 2vmin;" > All Service </p>
                     </button>
                 </a>
                 <a href="<%= "/service/delete/" + request.getAttribute("absName")%>" style="width: 4vw;margin: 0;">
-                    <button style="height: 7vh;width: 10vw;margin:0;">
+                    <button id="delete" style="height: 7vh;width: 10vw;margin:0;">
                         <p style="margin: 0;font-size: 2vmin;" > Delete </p>
                     </button>
                 </a>
                 <a href="<%= "/service/tariff/add/" + request.getAttribute("absName")%>" style="width: 4vw;margin: 0;">
-                    <button style="height: 7vh;width: 10vw;margin:0;">
+                    <button id="addTariff" style="height: 7vh;width: 10vw;margin:0;">
                         <p style="margin: 0;font-size: 2vmin;" > Add Tariff </p>
                     </button>
                 </a>
@@ -50,7 +50,7 @@
                         <tr>
                             <td>
                                 <form:label path="serviceName" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Name :: </form:label>
-                                <form:input path="serviceName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                                <form:input id="serviceName" path="serviceName"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                             </td>
                         </tr>
                     </table>
@@ -58,7 +58,7 @@
                         <tr>
                             <td>
                                 <form:label path="serviceType"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Type :: </form:label>
-                                <form:input path="serviceType"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                                <form:input id="serviceType" path="serviceType"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                             </td>
                         </tr>
                     </table>
@@ -66,7 +66,7 @@
                         <tr>
                             <td>
                                 <form:label path="serviceState"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">State :: </form:label>
-                                <form:checkbox path="serviceState"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                                <form:checkbox id="serviceState" path="serviceState"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                             </td>
                         </tr>
                     </table>
@@ -74,14 +74,14 @@
                         <tr>
                             <td>
                                 <form:label path="serviceDescribe"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Describe :: </form:label>
-                                <form:textarea path="serviceDescribe"  cssStyle="margin-right :  1vw; margin-left:1vw; max-width: 42vw; max-height: 58vh;margin-top: 2vh;font-size: 2vmin; width: 42vw;height: 58vh"/>
+                                <form:textarea id="serviceDescribe" path="serviceDescribe"  cssStyle="margin-right :  1vw; margin-left:1vw; max-width: 42vw; max-height: 58vh;margin-top: 2vh;font-size: 2vmin; width: 42vw;height: 58vh"/>
                             </td>
                         </tr>
                     </table>
                     <table>
                         <tr>
                             <td>
-                                <input type="submit" value="Update" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                                <input id="update" type="submit" value="Update" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                             </td>
                         </tr>
                     </table>
@@ -98,15 +98,15 @@
                         <tr>
                             <td>
                                 <form:label path="tariffId" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Id :: </form:label>
-                                <form:input path="tariffId"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 3.5vmin"/>
+                                <form:input id="tariffId" path="tariffId"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 3.5vmin"/>
                             </td>
                             <td>
                                 <form:label path="tariffCost" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Cost :: </form:label>
-                                <form:input path="tariffCost"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw"/>
+                                <form:input id="tariffCost" path="tariffCost"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw"/>
                             </td>
                             <td>
                                 <form:label path="tariffValue" cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Value :: </form:label>
-                                <form:input path="tariffValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw"/>
+                                <form:input id="tariffValue" path="tariffValue"  cssStyle="margin-right :  1vw;font-size: 2vmin;width: 5vw"/>
                             </td>
                         </tr>
                     </table>
@@ -114,11 +114,11 @@
                         <tr>
                             <td>
                                 <form:label path="tariffActual"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">Actual :: </form:label>
-                                <form:checkbox path="tariffActual"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                                <form:checkbox id="tariffActual" path="tariffActual"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                             </td>
                             <td>
                                 <form:label path="tariffDaypaymode"  cssStyle="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh">DP Mode :: </form:label>
-                                <form:checkbox path="tariffDaypaymode"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
+                                <form:checkbox id="tariffDaypaymode" path="tariffDaypaymode"  cssStyle="margin-right :  1vw;font-size: 2vmin"/>
                             </td>
                         </tr>
                     </table>
@@ -126,31 +126,31 @@
                         <tr>
                             <td>
                                 <form:label path="tariffDataDay" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> День :: </form:label>
-                                <form:select path="tariffDataDay">
+                                <form:select id="tariffDataDay" path="tariffDataDay">
                                     <form:options items="${ListDay}" cssStyle="font-size: 2vmin;" />
                                 </form:select>
                             </td>
                             <td>
                                 <form:label path="tariffDataMonth" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Месяц :: </form:label>
-                                <form:select path="tariffDataMonth">
+                                <form:select id="tariffDataMonth" path="tariffDataMonth">
                                     <form:options items="${ListMonth}" cssStyle="font-size: 2vmin;" />
                                 </form:select>
                             </td>
                             <td>
                                 <form:label path="tariffDataYearFP" cssStyle="margin-top: 1vh;margin-bottom: 2vh;margin-left: 1vw; font-size: 2.3vmin"> Год :: </form:label>
-                                <form:select path="tariffDataYearFP">
+                                <form:select id="tariffDataYearFP" path="tariffDataYearFP">
                                     <form:options items="${ListYear}" cssStyle="font-size: 2vmin;" />
                                 </form:select>
                             </td>
                             <td>
-                                <form:input path="tariffDataYearSP" cssStyle="font-size: 2vmin;width: 2vw;"/>
+                                <form:input id="tariffDataYearSP" path="tariffDataYearSP" cssStyle="font-size: 2vmin;width: 2vw;"/>
                             </td>
                         </tr>
                     </table>
                     <table>
                         <tr>
                             <td>
-                                <input type="submit" value="Filter" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
+                                <input id="filter" type="submit" value="Filter" style="font-size: 10vw;margin-left: 1vw;margin-bottom: 0vh" />
                             </td>
                         </tr>
                     </table>
@@ -171,17 +171,17 @@
                     <div style="display: flex">
                         <p style="margin-left: 1vw;font-size: 2.3vmin;margin-top: 2vh;color: green;margin-bottom: 0"> Actual Tariff :: </p>
                         <a href="<%= "/service/tariff/" + alreadyUse%>" style="width: 1vw;margin: 0;">
-                            <button style="height: 2.3vh;width: 10vw;margin-top: 2vh; margin-left: 2vw;">
+                            <button id="tariffUpdate" style="height: 2.3vh;width: 10vw;margin-top: 2vh; margin-left: 2vw;">
                                 <p style="margin: 0;font-size: 1.4vmin;" > Update Tariff </p>
                             </button>
                         </a>
                     </div>
-                    <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 1vh;margin-bottom: 0"> ID :: <%= sep.getServiceTariff().getId()%></p>
-                    <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> VALUE :: <%= sep.getServiceTariff().getValue()%></p>
-                    <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> DP Mode :: <%= sep.getServiceTariff().getDaypaymode()%></p>
-                    <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Actual :: <%= sep.getServiceTariff().getState()%></p>
-                     <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Cost :: <%= sep.getServiceTariff().getCost()%></p>
-                     <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Create :: <%= sep.getServiceTariff().getCreate_time()%></p>
+                    <p id="actualId"     style="margin-left: 2vw;font-size: 2vmin;margin-top: 1vh;margin-bottom: 0"> ID :: <%= sep.getServiceTariff().getId()%></p>
+                    <p id="actualValue"  style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> VALUE :: <%= sep.getServiceTariff().getValue()%></p>
+                    <p id="actualDpmode" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> DP Mode :: <%= sep.getServiceTariff().getDaypaymode()%></p>
+                    <p id="actualActual" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Actual :: <%= sep.getServiceTariff().getState()%></p>
+                    <p id="actualCost"   style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Cost :: <%= sep.getServiceTariff().getCost()%></p>
+                    <p id="actualCreate" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Create :: <%= sep.getServiceTariff().getCreate_time()%></p>
             <%}}%>
 
 
@@ -248,12 +248,12 @@
                 for (oneServicePage osp : gen.getPageOneService() ){
                     for (tariffEntity tae : osp.getTariff()){
                         if (tae.getId() != alreadyUse){%>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 1vh;margin-bottom: 0"> ID :: <%= tae.getId()%></p>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> VALUE :: <%= tae.getValue()%></p>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> DP Mode :: <%= tae.getDaypaymode()%></p>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Actual :: <%= tae.getState()%></p>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Cost :: <%= tae.getCost()%></p>
-                        <p style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Create :: <%= tae.getCreate_time()%></p>
+                        <p id="allId"     style="margin-left: 2vw;font-size: 2vmin;margin-top: 1vh;margin-bottom: 0"> ID :: <%= tae.getId()%></p>
+                        <p id="allValue"  style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> VALUE :: <%= tae.getValue()%></p>
+                        <p id="allDpmode" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> DP Mode :: <%= tae.getDaypaymode()%></p>
+                        <p id="allActual" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Actual :: <%= tae.getState()%></p>
+                        <p id="allCost"   style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Cost :: <%= tae.getCost()%></p>
+                        <p id="allCreate" style="margin-left: 2vw;font-size: 2vmin;margin-top: 0.4vh;margin-bottom: 0"> Create :: <%= tae.getCreate_time()%></p>
             <% } } }%>
         </div>
     </div>
