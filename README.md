@@ -1,4 +1,4 @@
-# Resul
+# Result
 
 ## Run Server
 
