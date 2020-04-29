@@ -2,103 +2,131 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="odb:war exploded" />
+      <artifact name="odb:war_exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c49f2724-ef4a-4fd2-9ea6-12f74e728c75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/contactAddValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/balanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/connectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/contactTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/oneClientAddDeleteContactTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/oneServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/serviceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/tariffTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/testtest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/odb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/odb_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66a5a8c4-6251-496a-872e-4c046d165e19.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb9bbf4b-2156-4f8b-a76b-5faa1e56670d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Latest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Latest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_TestNG_Release.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__artifacts_temp/odb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__artifacts_temp/odb_jar/odb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant_build_file.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant_build_file.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/initDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/initDB.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorClientPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorConnectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorConnectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneClientPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorOneServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorTariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/DAO/generatorTariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/MyCtr.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/MyCtr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/balanceValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/balanceValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientAddValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneClientAddValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneServiceValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/mx/spring/valid/oneServiceValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/connectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/connectPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/contactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/contactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/oneClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/oneClientPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/oneServicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/oneServicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/tariffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/java/pageEntity/tariffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/oneClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/src/test/java/selenium/oneClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorClientPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorConnectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorOneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorTariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/DAO/generatorTariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/MyCtr.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/MyCtr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/balanceValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/balanceValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneClientAddValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneClientAddValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneServiceValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/mx/spring/valid/oneServiceValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/connectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/connectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/contactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/contactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/oneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/tariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/classes/pageEntity/tariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/test-classes/selenium/oneClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/target/test-classes/selenium/oneClientTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/balance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/balance.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/clientExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/connect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/connect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/contactExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneClientExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneService.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneServiceAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/oneServiceAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/serviceExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/serviceExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariff.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariffAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/odb/webapp/WEB-INF/views/tariffAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorClientPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorClientPages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorConnectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorConnectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorTariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorTariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/MyCtr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/MyCtr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/balanceValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/balanceValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientAddValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientAddValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneServiceValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneServiceValidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/connectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/connectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/contactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/contactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneClientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneClientPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneServicePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneServicePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/tariffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/tariffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/balance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/balance.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/connect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/connect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneService.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneServiceAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneServiceAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/serviceExtended.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/serviceExtended.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariff.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariffAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariffAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_web_test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_web_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/odb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_jar/odb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/findById.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorClientPages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorConnectPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorContactPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneClientPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorOneServicePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorServicePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/DAO/generatorTariffPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/Factory/creatorSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/META-INF/odb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/accountEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/addresEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/clientEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/contactEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/emailEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/historyBalanceEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/historyServiceEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/phoneEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/serviceEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/ent/tariffEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/MyCtr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/config/MVCdispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/config/SpringConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/balanceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/clientModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/connectModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/contactModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/oneClientModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/oneServiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/serviceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/metaModel/tariffModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/balanceValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/clientValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/contactAddValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientAddValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneClientValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/oneServiceValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/mx/spring/valid/serviceValidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/clientPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/connectPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/contactPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneClientPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/oneServicePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/servicePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/classes/pageEntity/tariffPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/byte-buddy-1.10.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/hibernate-core-5.4.12.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/postgresql-42.2.10.jre7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-aop-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-beans-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-context-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-context-support-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-core-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-expression-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-jcl-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-web-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/spring-webmvc-5.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/balance.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientBase.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/clientExtended.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/connect.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/contactExtended.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneClientExtended.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneService.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/oneServiceAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/serviceExtended.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariff.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/tariffAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/odb_war_exploded/WEB-INF/views/test2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/somefile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/somefile.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +208,7 @@
         <option value="Tag Library Descriptor" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -228,7 +257,7 @@
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ant_build_file" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ant_build" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -247,7 +276,7 @@
       <recent name="$PROJECT_DIR$/ODB/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.MyNew">
+  <component name="RunManager" selected="JUnit.tariffTest">
     <configuration default="true" type="AntRunConfiguration">
       <antsettings antfile="file://$PROJECT_DIR$/build.xml" target="usage" />
       <method v="2">
@@ -266,7 +295,7 @@
       <option name="BROWSER_ID" value="e5120d43-2c3f-47ef-9f26-65e539e05186" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="odb:war exploded">
+        <artifact name="odb:war_exploded">
           <settings>
             <option name="defaultContextRoot" value="false" />
           </settings>
@@ -332,7 +361,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="odb:war exploded" />
+          <artifact name="odb:war_exploded" />
         </option>
       </method>
     </configuration>
@@ -342,7 +371,7 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="odb:war exploded">
+        <artifact name="odb:war_exploded">
           <settings>
             <option name="defaultContextRoot" value="false" />
           </settings>
@@ -408,25 +437,36 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="odb:war exploded" />
+          <artifact name="odb:war_exploded" />
         </option>
       </method>
     </configuration>
-    <configuration name="clientAddTest and 9 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="oneClientAddDeleteContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odb" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="selenium.clientAddTest" />
-        <pattern testClass="selenium.clientExtendedTest" />
-        <pattern testClass="selenium.connectTest" />
-        <pattern testClass="selenium.contactTest" />
-        <pattern testClass="selenium.oneClientAddDeleteContactTest" />
-        <pattern testClass="selenium.oneClientTest" />
-        <pattern testClass="selenium.oneServiceTest" />
-        <pattern testClass="selenium.serviceTest" />
-        <pattern testClass="selenium.tariffTest" />
-        <pattern testClass="selenium.balanceTest" />
-      </patterns>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.oneClientAddDeleteContactTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="oneClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.oneClientTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -472,24 +512,6 @@
       <option name="PACKAGE_NAME" value="selenium" />
       <option name="MAIN_CLASS_NAME" value="selenium.tariffTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_findByID and 8 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="odb" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="mx.test_findByID" />
-        <pattern testClass="mx.test_generatorClientPages" />
-        <pattern testClass="mx.test_generatorConnectPage" />
-        <pattern testClass="mx.test_generatorContactPage" />
-        <pattern testClass="mx.test_generatorOneClientPage" />
-        <pattern testClass="mx.test_generatorOneServicePage" />
-        <pattern testClass="mx.test_generatorServicePage" />
-        <pattern testClass="mx.test_generatorTariffPage" />
-        <pattern testClass="mx.test_IDU_ALL" />
-      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -545,19 +567,19 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
       <item itemvalue="GlassFish Server.MyNew" />
+      <item itemvalue="JUnit.oneClientAddDeleteContactTest" />
+      <item itemvalue="JUnit.oneClientTest" />
       <item itemvalue="JUnit.oneServiceTest" />
       <item itemvalue="JUnit.serviceTest" />
       <item itemvalue="JUnit.tariffTest" />
-      <item itemvalue="JUnit.clientAddTest and 9 more" />
-      <item itemvalue="JUnit.test_findByID and 8 more" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test_findByID and 8 more" />
-        <item itemvalue="JUnit.clientAddTest and 9 more" />
         <item itemvalue="JUnit.tariffTest" />
         <item itemvalue="JUnit.serviceTest" />
         <item itemvalue="JUnit.oneServiceTest" />
+        <item itemvalue="JUnit.oneClientTest" />
+        <item itemvalue="JUnit.oneClientAddDeleteContactTest" />
       </list>
     </recent_temporary>
   </component>
@@ -570,11 +592,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -649,7 +666,10 @@
       <workItem from="1587992623615" duration="7581000" />
       <workItem from="1588026447530" duration="1506000" />
       <workItem from="1588067485267" duration="4738000" />
-      <workItem from="1588099347989" duration="286000" />
+      <workItem from="1588099347989" duration="6823000" />
+      <workItem from="1588108468572" duration="505000" />
+      <workItem from="1588109440711" duration="459000" />
+      <workItem from="1588159969594" duration="2869000" />
     </task>
     <servers />
   </component>
@@ -691,10 +711,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="234" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1583017597585" />
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586859976513">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588104877186">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1586859976513" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1588104877186" />
     <state x="479" y="347" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1583824325513">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -723,6 +743,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="542" y="361" key="#com.intellij.ws.actions.GenerateJavaFromWsdlDialog/0.23.1440.877@0.23.1440.877" timestamp="1582911006035" />
+    <state x="286" y="123" key="#oneServiceTest" timestamp="1588109534417">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="286" y="123" key="#oneServiceTest/0.23.1440.877@0.23.1440.877" timestamp="1588109534417" />
     <state x="286" y="123" key="#test_day" timestamp="1585075358099">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -731,38 +755,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="286" y="135" key="#test_findByID/0.23.1440.877@0.23.1440.877" timestamp="1583939820239" />
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1588099670550">
+    <state width="1398" height="277" key="GridCell.Tab.0.bottom" timestamp="1588163743642">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588099670550" />
-    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1588099670549">
+    <state width="1398" height="277" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588163743642" />
+    <state width="1398" height="277" key="GridCell.Tab.0.center" timestamp="1588163743641">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1588099670549" />
-    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1588099670549">
+    <state width="1398" height="277" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1588163743641" />
+    <state width="1398" height="277" key="GridCell.Tab.0.left" timestamp="1588163743640">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1588099670549" />
-    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1588099670550">
+    <state width="1398" height="277" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1588163743640" />
+    <state width="1398" height="277" key="GridCell.Tab.0.right" timestamp="1588163743641">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1588099670550" />
-    <state width="958" height="197" key="GridCell.Tab.1.bottom" timestamp="1588073270940">
+    <state width="1398" height="277" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1588163743641" />
+    <state width="958" height="197" key="GridCell.Tab.1.bottom" timestamp="1588107724671">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588073270940" />
-    <state width="958" height="197" key="GridCell.Tab.1.center" timestamp="1588073270940">
+    <state width="958" height="197" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588107724671" />
+    <state width="958" height="197" key="GridCell.Tab.1.center" timestamp="1588107724670">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1588073270940" />
-    <state width="958" height="197" key="GridCell.Tab.1.left" timestamp="1588073270940">
+    <state width="958" height="197" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1588107724670" />
+    <state width="958" height="197" key="GridCell.Tab.1.left" timestamp="1588107724670">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1588073270940" />
-    <state width="958" height="197" key="GridCell.Tab.1.right" timestamp="1588073270940">
+    <state width="958" height="197" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1588107724670" />
+    <state width="958" height="197" key="GridCell.Tab.1.right" timestamp="1588107724671">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="197" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1588073270940" />
+    <state width="958" height="197" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1588107724671" />
     <state width="958" height="197" key="GridCell.Tab.2.bottom" timestamp="1587243299252">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -791,10 +815,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="527" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1585146172305" />
-    <state x="262" y="55" key="SettingsEditor" timestamp="1586647556880">
+    <state x="262" y="55" key="SettingsEditor" timestamp="1588109583251">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="262" y="55" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1586647556880" />
+    <state x="262" y="55" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1588109583251" />
     <state x="600" y="363" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583227069507">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -803,10 +827,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="583" y="231" key="com.intellij.database.view.ui.DbObjectDialog/0.23.1440.877@0.23.1440.877" timestamp="1583311920423" />
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1588099382969">
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1588159970420">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1588099382969" />
+    <state x="211" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1588159970420" />
     <state x="424" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583312549771">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -839,6 +863,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1588071578763" />
+    <state x="360" y="224" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1588106592210">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="360" y="224" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1588106592210" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/web$Main.ic" NAME="Main Coverage Results" MODIFIED="1583938646220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

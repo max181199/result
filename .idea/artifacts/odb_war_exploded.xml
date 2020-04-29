@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="odb:war exploded">
+  <artifact type="war" build-on-make="true" name="odb:war_exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/odb_war_exploded</output-path>
-    <root id="root">
+    <root id="archive" name="odb_war_exploded.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="odb" />

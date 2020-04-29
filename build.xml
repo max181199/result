@@ -15,6 +15,9 @@
 		<echo message="testDB   -->  Test       the database"/>
 		<echo message="deleteDB -->  Empty      the database"/>
 		<echo message="testHB --> Test ODB"/>
+		<echo message="start --> run app start page http://localhost:8080/start"/>
+		<echo message="stop --> stop app"/>
+		<echo message="test --> test app"/>
 		<echo message=""/>
 	</target>
 
@@ -44,14 +47,30 @@
 	</target>
 
 	<target name="testHibernate" description="test odb">
-		<ant antfile="ant_build_file.xml" target="odb.junit" />
+		<ant antfile="ant_build.xml" target="odb.junit" />
 	</target>
 
 	<target name="compile" description="compile module  odb">
-		<ant antfile="ant_build_file.xml" target="all" />
+		<ant antfile="ant_build.xml" target="all" />
 	</target>
 
-	<target name="testHB" depends="deleteDB,setupDB,compile,testHibernate"></target>
+	<target name="startApps" description=" -run server and deploy app">
+		<ant antfile="ant_build.xml" target="startApp" />
+	</target>
 
+	<target name="stopApps" description=" - undeploy app and stop server">
+		<ant antfile="ant_build.xml" target="stopApp" />
+	</target>
+
+	<target name="start" depends="setupDB,startApps"/>
+	<target name="stop" depends="stopApps,deleteDB"/>
+
+	<target name="testApp" description="test odb">
+		<ant antfile="ant_build.xml" target="test" />
+	</target>
+
+
+	<target name="testHB" depends="deleteDB,setupDB,compile,testHibernate"></target>
+	<target name="test" depends="start,testApp,stop"></target>
 
 </project>
