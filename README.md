@@ -1,4 +1,14 @@
-# prac
+# Resul
 
-  1) cd .../web
-  2) ant testHB
+## Run Server
+
+  ant start
+  
+## Stop Server
+
+  ant stop
+  
+## Address
+
+  http://localhost:8080/start
+
